@@ -22,6 +22,40 @@ from data_loader import DATA
 
 egs = {}
 
+def eg(key, string, fun, help):
+    egs[key] = fun
+    help = help + " -g " + str(key) + "\t" + str(string) + "\n"
+
+def sway_test_26():
+    data = DATA(the['file'])
+    best, rest, evals = data.sway()
+    print("\nall ",data.stats('mid',data.cols.y, 2))
+    print("    ",data.stats('div',data.cols.y, 2))
+    print("\nbest ",best.stats('mid',best.cols.y, 2))
+    print("    ",best.stats('div',best.cols.y, 2))
+    print("\nrest ",rest.stats('mid',rest.cols.y, 2))
+    print("    ",rest.stats('div',rest.cols.y, 2))
+    print("\nall ~= best?",diffs(best.cols.y, data.cols.y))
+    print("best ~= rest?",diffs(best.cols.y, rest.cols.y))
+
+def xpln_test_28():
+    data = DATA(the['file'])
+    best, rest, evals = data.sway()
+    rule, most = data.xpln(best, rest)
+    print("\n-----------\n explain =",showRule(rule))
+    # data1 = DATA(data.cols, selects(rule, data.rows))
+    select = selects(rule, data.rows)
+    data_select = [s for s in select if s != None]
+    data1 = data.clone(data_select)
+    print("all\t\t\t",data.stats('mid', data.cols.y, 2),data.stats('div', data.cols.y, 2))
+    print("sway with ",evals," evals",best.stats('mid', best.cols.y, 2), best.stats('div', best.cols.y, 2))
+    print("sway with ",evals," evals",data1.stats('mid', data1.cols.y, 2), data1.stats('div', data1.cols.y, 2))
+    top, _ = data.betters(len(best.rows))
+    # top = DATA(data.cols, top)
+    selected_data = [s for s in top.values() if s != None]
+    data2 = data.clone(selected_data)
+    print("sort with ",len(data.rows)," evals",data2.stats('mid',data2.cols.y,2),data2.stats('div',data2.cols.y,2))
+
 class TestEgMethods(unittest.TestCase):
 
     #Test for stats

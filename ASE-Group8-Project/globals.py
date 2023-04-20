@@ -16,7 +16,7 @@ OPTIONS:
   -H  --Halves search space for clustering = 512
   -m  --min    size of smallest cluster    = 0.5
   -M  --Max    numbers                     = 512
-  -p  --p      distance coefficient        = 2
+  -p  --p      distance coefficient        = 8
   -r  --rest   how many of rest to sample  = 4
   -R  --Reuse  child splits reuse a parent pole = true
   -s  --seed   random number seed          = 937162211

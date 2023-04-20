@@ -256,7 +256,6 @@ def add(col,x,n=0):
     col.mu = col['mu'] + d / col['n']
     col.m2 = col.m2 + d * (x - col.mu)
     col.sd = 0 if col.n < 2 else (col.m2 / (col.n - 1)) ** .5
-    end
     # if x!="?":
     #     n=n or 1
     #     col['n']=col['n'] + n
@@ -291,14 +290,14 @@ def RULE(ranges, maxSize):
         # 'txt' not in
 
         if range_var not in t:
-            t[range_var] = {}
+            t[range_var] = []
 
         lo_val=range['lo'] if 'lo' in range else 0
         hi_val=range['hi'] if 'hi' in range else 0
         at_val=range['at'] if 'at' in range else 0
 
         d = {'lo': lo_val, 'hi': hi_val, 'at': at_val}
-        t[range_var] = d
+        t[range_var].append(d)
     return prune(t, maxSize)
 
 def prune(rule, maxSize):
@@ -326,55 +325,55 @@ def extend(range, n, s):
 
 def mergeAny(ranges0):
     def noGaps(t):
-        for j in range(1, len(t)+1):
-            t[j].lo = t[j - 1].hi
-            t[0].lo = (-1)*(maxsize)
-            t[len(t)].hi = maxsize
+        for j in range(1, len(t)):
+            t[j]['lo'] = t[j - 1]['hi']
+        if len(t) > 0:
+            t[0]['lo'] = (-1)*(maxsize)
+            t[len(t)-1]['hi'] = maxsize
         return t
-    ranges1, j, left, right, y = {}, 0, None, None, None
+    ranges1, j, left, right, y = [], 0, None, None, None
     # print("printiing ranges0",ranges0)
-    while j < len(ranges0) - 1:
-        temp1, temp2 = list(ranges0)[j], list(ranges0)[j + 1]
-        left, right = ranges0[temp1], ranges0[temp2]
+    while j < len(ranges0):
+        # temp1, temp2 = list(ranges0)[j], list(ranges0)[j + 1]
+        left, right = ranges0[j], None if j == len(ranges0) - 1 else ranges0[j + 1]
         if right:
             y = merge2(left['y'], right['y'])
             if y:
                 j = j + 1
                 left['hi'], left['y'] = right['hi'], y
-        l = len(ranges1)
-        ranges1[l] = left
+        ranges1.append(left)
         j = j + 1
     if len(ranges0) == len(ranges1):
         return noGaps(ranges0)
     else:
         return mergeAny(ranges1)
 
-# def merges(ranges0, nSmall, nFar):
-#     def noGaps(t):
-#         # print("printing t in merges noGaps", t)
-#         for j in range(1, len(t)+1):
-#             t[j].lo = t[j - 1].hi
-#             t[0].lo = (-1)*(maxsize)
-#             t[len(t)].hi = maxsize
-#         return t
-#     def try2Merge(left, right, j):
-#         y = merged(left['y'], right['y'], nSmall, nFar)
-#         if y:
-#             j = j + 1
-#             left['hi'], left['y'] = right['hi'], y
-#         return j, left
-#     ranges1, j, here = {}, 0, None
-#     # print("printiing ranges0",ranges0)
-#     while j < len(ranges0) - 1:
-#         here = ranges0[j]
-#         if j < len(ranges0) - 1:
-#             j, here = try2Merge(here, ranges0[j+1], j)
-#             j = j + 1
-#             ranges1[len(ranges1)] = here
-#     if len(ranges0) == len(ranges1):
-#         return noGaps(ranges0)
-#     else:
-#         return merges(ranges1, nSmall, nFar)
+def merges(ranges0, nSmall, nFar):
+    def noGaps(t):
+        # print("printing t in merges noGaps", t)
+        for j in range(1, len(t)+1):
+            t[j].lo = t[j - 1].hi
+            t[0].lo = (-1)*(maxsize)
+            t[len(t)].hi = maxsize
+        return t
+    def try2Merge(left, right, j):
+        y = merged(left['y'], right['y'], nSmall, nFar)
+        if y:
+            j = j + 1
+            left['hi'], left['y'] = right['hi'], y
+        return j, left
+    ranges1, j, here = {}, 0, None
+    # print("printiing ranges0",ranges0)
+    while j < len(ranges0) - 1:
+        here = ranges0[j]
+        if j < len(ranges0) - 1:
+            j, here = try2Merge(here, ranges0[j+1], j)
+            j = j + 1
+            ranges1[len(ranges1)] = here
+    if len(ranges0) == len(ranges1):
+        return noGaps(ranges0)
+    else:
+        return merges(ranges1, nSmall, nFar)
 
 def merge(col1,col2):
     new_var=copy_t(col1)
@@ -398,15 +397,15 @@ def merge(col1,col2):
     return new_var
 
     
-# def merged(col1, col2, nSmall, nFar):
-#     new_var = merge(col1, col2)
-#     if nSmall and (col1.n < nSmall) or (col2.n < nSmall):
-#         return new_var
-#     if nFar and (not isinstance(col1, SYM)) and abs(col1.mid() - col2.mid()) < nFar:
-#         return new_var
-#     if new_var.div()<=(col1.div()*col1.n \
-#     +col2.div()*col2.n)/new_var.n:
-#         return new_var
+def merged(col1, col2, nSmall, nFar):
+    new_var = merge(col1, col2)
+    if nSmall and (col1.n < nSmall) or (col2.n < nSmall):
+        return new_var
+    if nFar and (not isinstance(col1, SYM)) and abs(col1.mid() - col2.mid()) < nFar:
+        return new_var
+    if new_var.div()<=(col1.div()*col1.n \
+    +col2.div()*col2.n)/new_var.n:
+        return new_var
     
 def merge2(col1,col2,new_var=None): 
     new_var=merge(col1,col2)
@@ -415,7 +414,7 @@ def merge2(col1,col2,new_var=None):
         return new_var
 
 def bin(col, x):
-    if x=="?" or isinstance(col, SYM):
+    if x=="?" or col.isSym:
         return x
     tmp = (col.hi - col.lo) / (the['bins'] - 1)
     if col.hi == col.lo:
@@ -423,52 +422,106 @@ def bin(col, x):
     else:
         return math.floor(x / tmp + 0.5)*tmp
 
-def bins(cols, rowss):
-    def fun(x):
-        return x
+# def bins(cols, rowss):
+#     def fun(x):
+#         return x
+#
+#     out = dict()
+#
+#
+#     for num_object in cols.values():
+#         if isinstance(num_object,NUM):
+#
+#             # round_n(value(range['y'].has, len(best.rows), len(rest.rows), 'best'))
+#
+#             ind = rand_intpy(0, len(num_object.has) - 1)
+#             print(num_object.txt, num_object.hi, num_object.lo,round_n(value(num_object.has, ind, len(num_object.has))),"{'best': ",len(num_object.has),"'rest':",ind,"}")
+#             print("")
+#             # print("ind is: ",ind)
+#
+#
+#         else:
+#             pass
+#
+#
+#     for _, col in cols.items():
+#         ranges = dict()
+#         for y, rows in rowss.items():
+#             for _, row in rows.items():
+#                 x = row.cells[col.at]
+#                 if x != "?":
+#                     k = int(bin(col, x))
+#                     if not k in ranges:
+#                         ranges[k] = RANGE(col.at, col.txt, x)
+#                     extend(ranges[k], x, y)
+#                 else:
+#                     print("x is apparently ?",x)
+#         ranges = sort_co(map_co(ranges, fun), "lo")
+#
+#         r = None
+#         if isinstance(col, SYM):
+#
+#             r = ranges
+#         else:
+#
+#             r = mergeAny(ranges)
+#         out[len(out)] = r
+#
+#     return out
+def functiondiv(col):
+    if col.isSym:
+        e = 0
+        for n in col['has'].values():
+            e = e-n/col['n']*math.log(n/col['n'], 2)
+        return e
+    else:
+        # return (per(has(col), .9) - per(has(col), .1))/2.58
+        return 0
+# def bins(cols,rowss):
+#   def with1Col(col):
+#     def itself(x):
+#         return x
+#     n,ranges = withAllRows(col)
+#     ranges   = sort_co(map_co(ranges,itself),lt("lo")) #keyArray to numArray, sorted
+#     if isinstance(col, SYM):
+#         return ranges
+#     else:
+#         return merges(ranges, n/the["bins"], the["d"]*functiondiv(col))
+#   def withAllRows(col):
+#     def xy(x,y,n):
+#       if x != "?":
+#         n = n + 1
+#         k = bin(col,x)
+#         ranges[k] = ranges[k] if k in ranges else RANGE(col.at,col.txt,x)
+#         extend(ranges[k], x, y)
+#       return n
+#
+#     n,ranges = 0,{}
+#     for y, rows in rowss.items():
+#         for row in rows.values():
+#             n = xy(row.cells[col.at],y, n)
+#     return n, ranges
+#   temp = map_co(cols, with1Col)
+#   return map_co(cols, with1Col)
 
-    out = dict()
+def bins(cols,rowss):
+    def xy(x,y,n):
+        if x != "?":
+            n = n + 1
+            k = bin(col,x)
+            innerRanges[k] = innerRanges[k] if k in innerRanges else RANGE(col.at,col.txt,x)
+            extend(innerRanges[k], x, y)
+        return n
 
-
-    for num_object in cols.values():
-        if isinstance(num_object,NUM):
-
-            # round_n(value(range['y'].has, len(best.rows), len(rest.rows), 'best'))
-
-            ind = rand_intpy(0, len(num_object.has) - 1)
-            print(num_object.txt, num_object.hi, num_object.lo,round_n(value(num_object.has, ind, len(num_object.has))),"{'best': ",len(num_object.has),"'rest':",ind,"}")
-            print("")
-            # print("ind is: ",ind)
-
-
-        else:
-            pass
-
-
-    for _, col in cols.items():
-        ranges = dict()
+    n,ranges = 0,[]
+    for col in cols.values():
+        innerRanges = {}
         for y, rows in rowss.items():
-            for _, row in rows.items():
-                x = row.cells[col.at]
-                if x != "?":
-                    k = int(bin(col, x))
-                    if not k in ranges:
-                        ranges[k] = RANGE(col.at, col.txt, x)
-                    extend(ranges[k], x, y)
-                else:
-                    print("x is apparently ?",x)
-        ranges = sort_co(map_co(ranges, fun), "lo")
-
-        r = None
-        if isinstance(col, SYM):
-
-            r = ranges
-        else:
-
-            r = mergeAny(ranges)
-        out[len(out)] = r
-
-    return out
+            for row in rows.values():
+                n = xy(row.cells[col.at],y, n)
+        innerRanges = list(dict(sorted(innerRanges.items())).values())
+        ranges.append(innerRanges if isinstance(col, SYM) else mergeAny(innerRanges))
+    return ranges
 
 
 def cliffsDelta(ns1,ns2):
@@ -540,7 +593,7 @@ def value(has, nB=None, nR=None, sGoal=None):
         else:
             r = r + n
     b, r = b/(nB+1/math.inf), r/(nR+1/math.inf)
-    return b**(2/(b+r))
+    return b**2/(b+r)
 
 def firstN(sortedRanges, scoreFun):
     def fun(r):
@@ -548,21 +601,25 @@ def firstN(sortedRanges, scoreFun):
         print(r["range"]["txt"], r["range"]["lo"], r["range"]["hi"], round_n(r["val"]), r["range"]["y"].has)
     print("")
     # print("sortedRanges before map_co is:",sortedRanges)
-    map_co(sortedRanges, fun)
+    for range1 in sortedRanges:
+        fun(range1)
     # print("sortedRanges is",sortedRanges)
     first = sortedRanges[0]["val"]
-    def useful(range):
-        if range["val"] > 0.5 and range["val"] > first/10:
-            return range
-    sortedRanges = map_co(sortedRanges, useful)
+    def useful(range1):
+        if range1["val"] > 0.5 and range1["val"] > first/10:
+            return range1
+    usefulRanges = []
+    for range1 in sortedRanges:
+        if range1["val"] > 0.05 and range1["val"] > first/10:
+            usefulRanges.append(range1)
     most, out = -1, None
-    for n in range(0, len(sortedRanges)):
+    for n in range(0, len(usefulRanges)):
         # print("I'm inside the for loop, testing")
-        score_fun_variable=scoreFun(map_co(slice(sortedRanges, 0, n), on('range')))
+        score_fun_variable=scoreFun(map_co(slice(usefulRanges, 0, n), on('range')))
         # print("this is debugging scoreFun,scoreFun is:",score_fun_variable)
         if score_fun_variable is None:
             continue
-        tmp, rule = scoreFun(map_co(slice(sortedRanges, 0, n), on('range')))
+        tmp, rule = scoreFun(map_co(slice(usefulRanges, 0, n), on('range')))
         if tmp and tmp > most:
             out, most = rule, tmp
     return out, most
@@ -571,7 +628,13 @@ def showRule(rule):
     def pretty(range):
         return range.lo==range.hi and range.lo or {range.lo, range.hi}
     def merges(attr, ranges):
-        return map_co(merge(sort_co(ranges, "lo")), pretty), attr
+        sorted_ranges = sorted(ranges, key=lambda x: x['lo'])
+        merged_ranges = merge(sorted_ranges)
+        pretty_merged_ranges = []
+        for i in range(len(merged_ranges)):
+            prettied = merged_ranges[i]['lo'] if merged_ranges[i]['lo'] == merged_ranges[i]['hi'] else [merged_ranges[i]['lo'], merged_ranges[i]['hi']]
+            pretty_merged_ranges.append(prettied)
+        return pretty_merged_ranges, attr
     def merge(t0):
         t, j, left, right = {}, 0, 0 , 0
         empty_dict=dict()
@@ -594,48 +657,59 @@ def showRule(rule):
 
 def selects(rule, rows):
     def disjunction(ranges, row):
-        empty_dict=dict()
-        # print(ranges.items())
-        for _, range_stat in ranges.items():
-            current_range=range_stat
-            # print("current range is:",current_range)
-            # print("type of range_stat is:",type(range_stat))
-            # print("this is range_stat, should not be an int, I suppose:", range_stat)
-            # print("this is ranges.items()",ranges.items())
-
-            if range_stat==0:
-                lo=hi=at=0
-            else:
-                lo= range_stat["lo"] if 'lo' in range_stat else empty_dict
-                hi= range_stat["hi"] if 'hi' in range_stat else empty_dict
-                at= range_stat["at"] if 'lo' in range_stat else empty_dict
-
-
-            # print("row is:",row)
-            # print("type of row is:",type(row))
-
-            try:
-                if row['at'] == '?':
-                    x = True
-
-                if 'at' in row:
-                    print("row['at'] is:",row['at'])
-
-                x = row['at'] if 'at' in row else empty_dict
-
-                if x == "?":
-                    return True
-
-                if lo == hi and lo == x:
-                    return True
-
-                if lo <= x and x < hi:
-                    return True
-
-            except:
-                continue
-
+        for curRange in ranges:
+            lo, hi = curRange["lo"], curRange["hi"]
+            x = row.cells[curRange["at"]]
+            if x == "?":
+                return True
+            if lo == hi and lo == x:
+                return True
+            if lo <= x and x < hi:
+                return True
         return False
+
+        # empty_dict=dict()
+        # # print(ranges.items())
+        # for _, range_stat in ranges.items():
+        #     current_range=range_stat
+        #     # print("current range is:",current_range)
+        #     # print("type of range_stat is:",type(range_stat))
+        #     # print("this is range_stat, should not be an int, I suppose:", range_stat)
+        #     # print("this is ranges.items()",ranges.items())
+        #
+        #     if range_stat==0:
+        #         lo=hi=at=0
+        #     else:
+        #         lo= range_stat["lo"] if 'lo' in range_stat else empty_dict
+        #         hi= range_stat["hi"] if 'hi' in range_stat else empty_dict
+        #         at= range_stat["at"] if 'lo' in range_stat else empty_dict
+        #
+        #
+        #     # print("row is:",row)
+        #     # print("type of row is:",type(row))
+        #
+        #     try:
+        #         if row['at'] == '?':
+        #             x = True
+        #
+        #         if 'at' in row:
+        #             print("row['at'] is:",row['at'])
+        #
+        #         x = row['at'] if 'at' in row else empty_dict
+        #
+        #         if x == "?":
+        #             return True
+        #
+        #         if lo == hi and lo == x:
+        #             return True
+        #
+        #         if lo <= x and x < hi:
+        #             return True
+        #
+        #     except:
+        #         continue
+        #
+        # return False
 
     def conjunction(row):
         for _,ranges in rule.items():
@@ -645,8 +719,13 @@ def selects(rule, rows):
 
     def fun(r):
         if conjunction(r):
-            return map_co(rows, r)
-    return map_co(rows, fun)
+            return r
+    out = []
+    for row in rows.values():
+        tmp = fun(row)
+        if tmp:
+            out.append(tmp)
+    return out
 
 def on(x):
 
@@ -832,8 +911,7 @@ def RX(t,s):
             'show':"",'has':t}
 
 def div(t):
-    if t['has']:
-        t = t['has']
+    t = t.has
     const_nine = 9
     const_one = 1
     return (t[len(t) * const_nine // 10] - t[len(t) * const_one // 10]) / 2.56

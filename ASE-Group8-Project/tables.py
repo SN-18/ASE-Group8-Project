@@ -96,6 +96,7 @@ class NUM(OBJ):
         self.isIgnored=None
         self.isKlass=None
         self.isGoal=None
+        self.isSym=False
 
         self.sd = 0
 

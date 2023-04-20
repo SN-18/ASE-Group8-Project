@@ -85,10 +85,27 @@ class DATA:
         def fun(x):
             data.add(x)
 
-        for k, v in init_para.items():
-            data.add(v)
+        if isinstance(init_para, dict):
+            for k, v in init_para.items():
+                data.add(v)
+        else:
+            for val in init_para:
+                data.add(val)
 
         return data
+    
+    def stats(self,what, cols, nPlaces):
+        def fun(k,col):
+            if what=="div":
+
+                val=col.rnd(col.div(), nPlaces)
+
+            elif what=="mid":
+
+                val=col.rnd(col.mid(), nPlaces)
+
+            return val,col.txt
+        return kap_co(cols or self.cols.y,fun)
 
     def s(self,what, cols, nPlaces):
         def fun(k,col):
@@ -149,7 +166,8 @@ class DATA:
         d, cols = 0, (cols or self.cols.x)
         for _, col in cols.items():
             # d = d + dist1(col, t1[col.at], t2[col.at])**the['p']
-            d = d + col.dist(t1.cells[col.at], t2.cells[col.at])**the['p']
+            # d = d + col.dist(t1.cells[col.at], t2.cells[col.at])**the['p']
+            d = d + col.dist(t1.cells[col.at], t2.cells[col.at])**3
         return (d / len(cols))**(1 / the['p'])
     
     def around(self, row1, rows=None, cols=None):
@@ -176,7 +194,10 @@ class DATA:
         some = many(rows, the['Halves'])
 
         A = above or any(some)
-        temp = self.furthest(A, rows)
+        # temp = self.furthest(A, rows)
+        # r = random_1(A, rows)^M
+        temp = self.rand_point(A, rows)
+        #we can choose temp to be any random point andnot necessarily the farthest from A
         B = temp['row']
         c = temp['dist']
         left, right, eval = {}, {}, None
@@ -242,11 +263,19 @@ class DATA:
         best, rest, evals = worker(self.rows, {}, 0)
         return self.clone(best), self.clone(rest), evals
 
-    def furthest(self, row1, rows=None, cols=None):
-        t = self.around(row1, rows, cols)
-        far = math.floor(len(t)*the['Far'])
-        last_key = list(t)[far]
-        return t[last_key]
+    # def furthest(self, row1, rows=None, cols=None):
+    #     t = self.around(row1, rows, cols)
+    #     far = math.floor(len(t)*the['Far'])
+    #     last_key = list(t)[far]
+    #     return t[last_key]
+
+    def rand_point(self, row1, rows=None, cols=None):
+        t=self.around(row1, rows, cols)
+        rand_pnt=rand_intpy(1, len(t))
+        # self.visited[len(self.visited)] = self.row1
+        # while(t[rand_point]['row']==self.row1):
+        # rand_point=rand_intpy(1, len(t))
+        return t[rand_pnt]
 
     def tree(self, rows=None, min=None, cols=None, above=None):
         rows = rows or self.rows
@@ -273,13 +302,13 @@ class DATA:
 
                 if len(bestr) + len(restr) > 0:
                     return v({'best': len(bestr), 'rest': len(restr)}), rule
-        tmp, maxSizes = {}, {}
+        tmp, maxSizes = [], {}
 
         # print("this is cols.x dictionary",self.cols.x)
         # print("this is the iterable term", bins(self.cols.x, {'best': best.rows, 'rest': rest.rows}).items())
-        iterable=bins(self.cols.x, {'best': best.rows, 'rest': rest.rows}).items()
+        iterable=bins(self.cols.x, {'best': best.rows, 'rest': rest.rows})
 
-        for _, ranges in iterable:
+        for ranges in iterable:
             # print("printing ranges in DATA xpln",ranges)
             # print("this is ranges dictionary",ranges)
 
@@ -289,16 +318,17 @@ class DATA:
                 # print("this is ranges[1]", ranges[1])
                 # print("I'm inside of try, as I should be, as ranges is not empty")
                 # print("ranges.items() is:", ranges.items())
-                maxSizes[ranges[1]["txt"]] = len(ranges)
+                maxSizes[ranges[0]["txt"]] = len(ranges)
 
                 print("\n")
 
-                for _, range in ranges.items():
+                for range in ranges:
                     # print("Debugging: This range should not be empty",range)
                     print(range["txt"], range["lo"], range["hi"])
-                    tmp[len(tmp)] = {'range': range, 'max': len(ranges), 'val': v(range["y"].has)}
+                    tmp.append({'range': range, 'max': len(ranges), 'val': v(range["y"].has)})
             else:
                 continue
         # print("this is debugging, value of tmp var is:",tmp)
-        rule, most = firstN(sort_co(tmp, 'val'), score)
+        # rule, most = firstN(sort_co(tmp, 'val'), score)
+        rule, most = firstN(sorted(tmp, key=lambda d: -d['val']), score)
         return rule, most

@@ -65,7 +65,7 @@ def driver(options, help, funs):
 
 #Main
 if __name__ == '__main__':
-    unittest.main()
+    # unittest.main()
     # eg('the', 'show settings', the_test_1, help)
     # eg('rand', 'demo random number generation', rand_test_20, help)
     # eg('some', 'demo of reservoir sampling', some_test_21, help)
@@ -78,9 +78,9 @@ if __name__ == '__main__':
     # eg('dist', 'distance test', dist_test_24, help)
     # eg('half', 'divide data in half', half_test_10, help)
     # eg('tree', 'make and show tree of clusters', tree_test_25, help)
-    # eg('sway', 'optimizing', sway_test_26, help)
+    eg('sway', 'optimizing', sway_test_26, help)
     # eg('bins', 'find deltas between best and rest', bins_test_27, help)
-    # eg('xpln', 'explore explanation sets', xpln_test_28, help)
+    eg('xpln', 'explore explanation sets', xpln_test_28, help)
 
     driver(the, help, egs)
 
