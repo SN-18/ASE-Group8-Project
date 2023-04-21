@@ -49,7 +49,7 @@ def xpln_test_28():
     data1 = data.clone(data_select)
     print("all\t\t\t",data.stats('mid', data.cols.y, 2),data.stats('div', data.cols.y, 2))
     print("sway with ",evals," evals",best.stats('mid', best.cols.y, 2), best.stats('div', best.cols.y, 2))
-    print("sway with ",evals," evals",data1.stats('mid', data1.cols.y, 2), data1.stats('div', data1.cols.y, 2))
+    print("xpln with ",evals," evals",data1.stats('mid', data1.cols.y, 2), data1.stats('div', data1.cols.y, 2))
     top, _ = data.betters(len(best.rows))
     # top = DATA(data.cols, top)
     selected_data = [s for s in top.values() if s != None]

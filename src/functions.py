@@ -282,7 +282,7 @@ def RANGE(at, txt, lo, hi=None):
 
 def RULE(ranges, maxSize):
     t = {}
-    for _,range in ranges.items():
+    for range in ranges:
         # print("this is the function RULE, and this is range dict:",range)
 
         range_var=range['txt'] if 'txt' in range else 0
@@ -615,11 +615,15 @@ def firstN(sortedRanges, scoreFun):
     most, out = -1, None
     for n in range(0, len(usefulRanges)):
         # print("I'm inside the for loop, testing")
-        score_fun_variable=scoreFun(map_co(slice(usefulRanges, 0, n), on('range')))
-        # print("this is debugging scoreFun,scoreFun is:",score_fun_variable)
-        if score_fun_variable is None:
+        # score_fun_variable=scoreFun(map_co(slice(usefulRanges, 0, n), on('range')))
+        # # print("this is debugging scoreFun,scoreFun is:",score_fun_variable)
+        # if score_fun_variable is None:
+        #     continue
+        # tmp, rule = scoreFun(map_co(slice(usefulRanges, 0, n), on('range')))
+        scoreVal = scoreFun([s['range'] for s in usefulRanges[0: n + 1]])
+        if scoreVal is None:
             continue
-        tmp, rule = scoreFun(map_co(slice(usefulRanges, 0, n), on('range')))
+        tmp, rule = scoreVal[0], scoreVal[1]
         if tmp and tmp > most:
             out, most = rule, tmp
     return out, most
@@ -636,24 +640,23 @@ def showRule(rule):
             pretty_merged_ranges.append(prettied)
         return pretty_merged_ranges, attr
     def merge(t0):
-        t, j, left, right = {}, 0, 0 , 0
-        empty_dict=dict()
-        while j < len(t0) - 1:
+        t, j, left, right = [], 0, 0 , 0
+        while j < len(t0):
 
-            left= t0[j] if j in t0 else empty_dict
-            right=t0[j+1] if (j+1) in t0 else empty_dict
+            left= t0[j] if j < len(t0) else {}
+            right=t0[j+1] if (j+1) < len(t0) else {}
 
 
             if right and left["hi"] == right["lo"]:
                 left["hi"] = right["hi"]
                 j = j + 1
-            t[len(t)] = {'lo': left['lo'] if 'lo' in left else 0, 'hi': left['hi'] if 'hi' in left else 0}
+            t.append({'lo': left['lo'], 'hi': left['hi']})
             j = j + 1
         if len(t0) == len(t):
             return t
         else:
             return merge(t)
-    return kap_co(rule, merges)
+    return [merges(k, v) for k,v in rule.items()]
 
 def selects(rule, rows):
     def disjunction(ranges, row):
