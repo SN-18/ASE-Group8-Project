@@ -1,0 +1,163 @@
+  sway ------------------------------------------------------------
+
+all  {0: (30.94, 'NUMBERITERATIONS-'), 1: (506.07, 'TIMETOSOLUTION-')}
+     {0: (94.53, 'NUMBERITERATIONS-'), 1: (1677.05, 'TIMETOSOLUTION-')}
+
+best  {0: (6.57, 'NUMBERITERATIONS-'), 1: (108.81, 'TIMETOSOLUTION-')}
+     {0: (1.74, 'NUMBERITERATIONS-'), 1: (29.1, 'TIMETOSOLUTION-')}
+
+rest  {0: (33.97, 'NUMBERITERATIONS-'), 1: (543.94, 'TIMETOSOLUTION-')}
+     {0: (100.59, 'NUMBERITERATIONS-'), 1: (1735.38, 'TIMETOSOLUTION-')}
+
+all ~= best? {0: (False, 'NUMBERITERATIONS-'), 1: (False, 'TIMETOSOLUTION-')}
+best ~= rest? {0: (False, 'NUMBERITERATIONS-'), 1: (False, 'TIMETOSOLUTION-')}
+✅ pass: sway
+
+▶️  xpln ------------------------------------------------------------
+
+
+f 0 0
+f 1 1
+
+
+sMOOTHER 1 1
+
+
+cOLORGS 0 0
+cOLORGS 1 1
+
+
+rELAXPARAMETER 0 0
+rELAXPARAMETER 1 1
+
+
+v 0 0
+v 1 1
+
+
+jACOBI 0 0
+jACOBI 1 1
+
+
+lINE 0 0
+lINE 1 1
+
+
+zEBRALINE 0 0
+zEBRALINE 1 1
+
+
+cYCLE 1 1
+
+
+ALPHA -9223372036854775807 35
+ALPHA 35 40
+ALPHA 40 45
+ALPHA 45 50
+ALPHA 50 55
+ALPHA 55 65
+ALPHA 65 70
+ALPHA 70 75
+ALPHA 75 80
+ALPHA 80 85
+ALPHA 85 9223372036854775807
+
+
+BETA -9223372036854775807 5
+BETA 5 10
+BETA 10 15
+BETA 15 25
+BETA 25 30
+BETA 30 35
+BETA 35 40
+BETA 40 45
+BETA 45 50
+BETA 50 55
+BETA 55 65
+BETA 65 75
+BETA 75 80
+BETA 80 85
+BETA 85 9223372036854775807
+
+
+PRESMOOTHING -9223372036854775807 0
+PRESMOOTHING 0 1
+PRESMOOTHING 1 9223372036854775807
+
+
+POSTSMOOTHING -9223372036854775807 9223372036854775807
+
+sMOOTHER 1 1 0.5 {'best': 467, 'rest': 1868}
+cYCLE 1 1 0.5 {'best': 467, 'rest': 1868}
+zEBRALINE 0 0 0.378 {'best': 351, 'rest': 1384}
+jACOBI 0 0 0.378 {'best': 350, 'rest': 1377}
+lINE 0 0 0.373 {'best': 351, 'rest': 1425}
+cOLORGS 0 0 0.371 {'best': 349, 'rest': 1418}
+f 0 0 0.259 {'best': 235, 'rest': 883}
+v 1 1 0.259 {'best': 235, 'rest': 883}
+rELAXPARAMETER 0 0 0.254 {'best': 234, 'rest': 914}
+rELAXPARAMETER 1 1 0.247 {'best': 233, 'rest': 954}
+f 1 1 0.241 {'best': 232, 'rest': 985}
+v 0 0 0.241 {'best': 232, 'rest': 985}
+PRESMOOTHING -9223372036854775807 0 0.164 {'best': 107, 'rest': 170}
+cOLORGS 1 1 0.129 {'best': 118, 'rest': 450}
+lINE 1 1 0.127 {'best': 116, 'rest': 443}
+jACOBI 1 1 0.122 {'best': 117, 'rest': 491}
+zEBRALINE 1 1 0.122 {'best': 116, 'rest': 484}
+POSTSMOOTHING -9223372036854775807 9223372036854775807 0.026 {'best': 32, 'rest': 197, 48: 3, 209: 1, 205: 1, 1: 4, 56: 1, 216: 2, 2: 2}
+ALPHA -9223372036854775807 35 0.0 {'rest': 16, 26: 1, 1: 2, 2: 1}
+ALPHA 35 40 0.0 {'rest': 94}
+ALPHA 40 45 0.0 {'rest': 91}
+ALPHA 45 50 0.0 {'rest': 101}
+ALPHA 50 55 0.0 {'rest': 114}
+ALPHA 55 65 0.0 {'rest': 305}
+ALPHA 65 70 0.0 {'rest': 162}
+ALPHA 70 75 0.0 {'rest': 160}
+ALPHA 75 80 0.0 {'rest': 154}
+ALPHA 80 85 0.0 {'rest': 182}
+ALPHA 85 9223372036854775807 0.0 {'rest': 165}
+BETA -9223372036854775807 5 0.0 {'rest': 17}
+BETA 5 10 0.0 {'rest': 37}
+BETA 10 15 0.0 {'rest': 36}
+BETA 15 25 0.0 {'rest': 95}
+BETA 25 30 0.0 {'rest': 89}
+BETA 30 35 0.0 {'rest': 88}
+BETA 35 40 0.0 {'rest': 87}
+BETA 40 45 0.0 {'rest': 96}
+BETA 45 50 0.0 {'rest': 122}
+BETA 50 55 0.0 {'rest': 105}
+BETA 55 65 0.0 {'rest': 258}
+BETA 65 75 0.0 {'rest': 152, 467: 1, 143: 1}
+BETA 75 80 0.0 {'rest': 163}
+BETA 80 85 0.0 {'rest': 194}
+BETA 85 9223372036854775807 0.0 {'rest': 186}
+PRESMOOTHING 0 1 0.0 {'rest': 213}
+PRESMOOTHING 1 9223372036854775807 0.0 {'rest': 196, 225: 1, 1: 2, 2: 1}
+{0: ([], 'cYCLE'), 1: ([], 'zEBRALINE'), 2: ([], 'jACOBI'), 3: ([], 'lINE'), 4: ([], 'cOLORGS'), 5: ([], 'f'), 6: ([], 'v'), 7: ([], 'rELAXPARAMETER'), 8: ([], 'PRESMOOTHING')}
+{0: ([], 'cYCLE')}
+{0: ([], 'cYCLE')}
+{0: ([], 'cYCLE'), 1: ([], 'zEBRALINE')}
+{0: ([], 'cYCLE'), 1: ([], 'zEBRALINE')}
+{0: ([], 'cYCLE'), 1: ([], 'zEBRALINE'), 2: ([], 'jACOBI')}
+{0: ([], 'cYCLE'), 1: ([], 'zEBRALINE'), 2: ([], 'jACOBI')}
+{0: ([], 'cYCLE'), 1: ([], 'zEBRALINE'), 2: ([], 'jACOBI'), 3: ([], 'lINE')}
+{0: ([], 'cYCLE'), 1: ([], 'zEBRALINE'), 2: ([], 'jACOBI'), 3: ([], 'lINE')}
+{0: ([], 'cYCLE'), 1: ([], 'zEBRALINE'), 2: ([], 'jACOBI'), 3: ([], 'lINE'), 4: ([], 'cOLORGS')}
+{0: ([], 'cYCLE'), 1: ([], 'zEBRALINE'), 2: ([], 'jACOBI'), 3: ([], 'lINE'), 4: ([], 'cOLORGS'), 5: ([], 'f')}
+{0: ([], 'cYCLE'), 1: ([], 'zEBRALINE'), 2: ([], 'jACOBI'), 3: ([], 'lINE'), 4: ([], 'cOLORGS'), 5: ([], 'f'), 6: ([], 'v')}
+{0: ([], 'cYCLE'), 1: ([], 'zEBRALINE'), 2: ([], 'jACOBI'), 3: ([], 'lINE'), 4: ([], 'cOLORGS'), 5: ([], 'f'), 6: ([], 'v'), 7: ([], 'rELAXPARAMETER')}
+{0: ([], 'cYCLE'), 1: ([], 'zEBRALINE'), 2: ([], 'jACOBI'), 3: ([], 'lINE'), 4: ([], 'cOLORGS'), 5: ([], 'f'), 6: ([], 'v'), 7: ([], 'rELAXPARAMETER')}
+{0: ([], 'cYCLE'), 1: ([], 'zEBRALINE'), 2: ([], 'jACOBI'), 3: ([], 'lINE'), 4: ([], 'cOLORGS'), 5: ([], 'f'), 6: ([], 'v'), 7: ([], 'rELAXPARAMETER')}
+{0: ([], 'cYCLE'), 1: ([], 'zEBRALINE'), 2: ([], 'jACOBI'), 3: ([], 'lINE'), 4: ([], 'cOLORGS'), 5: ([], 'f'), 6: ([], 'v'), 7: ([], 'rELAXPARAMETER')}
+{0: ([], 'cYCLE'), 1: ([], 'zEBRALINE'), 2: ([], 'jACOBI'), 3: ([], 'lINE'), 4: ([], 'cOLORGS'), 5: ([], 'f'), 6: ([], 'v'), 7: ([], 'rELAXPARAMETER'), 8: ([], 'PRESMOOTHING')}
+{0: ([], 'cYCLE'), 1: ([], 'zEBRALINE'), 2: ([], 'jACOBI'), 3: ([], 'lINE'), 4: ([], 'cOLORGS'), 5: ([], 'f'), 6: ([], 'v'), 7: ([], 'rELAXPARAMETER'), 8: ([], 'PRESMOOTHING')}
+{0: ([], 'cYCLE'), 1: ([], 'zEBRALINE'), 2: ([], 'jACOBI'), 3: ([], 'lINE'), 4: ([], 'cOLORGS'), 5: ([], 'f'), 6: ([], 'v'), 7: ([], 'rELAXPARAMETER'), 8: ([], 'PRESMOOTHING')}
+{0: ([], 'cYCLE'), 1: ([], 'zEBRALINE'), 2: ([], 'jACOBI'), 3: ([], 'lINE'), 4: ([], 'cOLORGS'), 5: ([], 'f'), 6: ([], 'v'), 7: ([], 'rELAXPARAMETER'), 8: ([], 'PRESMOOTHING')}
+
+-----------
+ explain = {0: ([], 'cYCLE')}
+all                      {0: (30.94, 'NUMBERITERATIONS-'), 1: (506.07, 'TIMETOSOLUTION-')} {0: (94.53, 'NUMBERITERATIONS-'), 1: (1677.05, 'TIMETOSOLUTION-')}
+sway with  10  evals {0: (9.03, 'NUMBERITERATIONS-'), 1: (165.52, 'TIMETOSOLUTION-')} {0: (7.31, 'NUMBERITERATIONS-'), 1: (43.62, 'TIMETOSOLUTION-')}
+sway with  10  evals {0: (30.94, 'NUMBERITERATIONS-'), 1: (506.07, 'TIMETOSOLUTION-')} {0: (94.53, 'NUMBERITERATIONS-'), 1: (1677.05, 'TIMETOSOLUTION-')}
+sort with  239360  evals {0: (159.14, 'NUMBERITERATIONS-'), 1: (1793.6, 'TIMETOSOLUTION-')} {0: (205.45, 'NUMBERITERATIONS-'), 1: (2480.2, 'TIMETOSOLUTION-')}
+✅ pass: xpln

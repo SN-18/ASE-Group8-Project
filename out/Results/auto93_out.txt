@@ -1,0 +1,95 @@
+▶️  sway ------------------------------------------------------------
+
+all  {0: (2970.42, 'Lbs-'), 1: (15.57, 'Acc+'), 2: (23.84, 'Mpg+')}
+     {0: (846.84, 'Lbs-'), 1: (2.76, 'Acc+'), 2: (8.34, 'Mpg+')}
+
+best  {0: (3252.75, 'Lbs-'), 1: (15.33, 'Acc+'), 2: (20.0, 'Mpg+')}
+     {0: (549.53, 'Lbs-'), 1: (2.47, 'Acc+'), 2: (0.0, 'Mpg+')}
+
+rest  {0: (3104.56, 'Lbs-'), 1: (14.9, 'Acc+'), 2: (22.5, 'Mpg+')}
+     {0: (845.0, 'Lbs-'), 1: (2.48, 'Acc+'), 2: (9.34, 'Mpg+')}
+
+all ~= best? {0: (True, 'Lbs-'), 1: (True, 'Acc+'), 2: (True, 'Mpg+')}
+best ~= rest? {0: (True, 'Lbs-'), 1: (True, 'Acc+'), 2: (True, 'Mpg+')}
+✅ pass: sway
+
+▶️  xpln ------------------------------------------------------------
+
+
+Clndrs -9223372036854775807 6
+Clndrs 6 9223372036854775807
+
+
+Volume -9223372036854775807 90
+Volume 90 140
+Volume 140 163
+Volume 163 173
+Volume 173 200
+Volume 200 232
+Volume 232 267
+Volume 267 318
+Volume 318 351
+Volume 351 9223372036854775807
+
+
+Model -9223372036854775807 70
+Model 70 71
+Model 71 72
+Model 72 73
+Model 73 75
+Model 75 76
+Model 76 77
+Model 77 78
+Model 78 79
+Model 79 80
+Model 80 81
+Model 81 9223372036854775807
+
+
+origin 1 1
+origin 2 2
+origin 3 3
+
+origin 1 1 0.35 {'best': 8, 'rest': 29}
+Model 79 80 0.148 {'best': 2, 'rest': 1}
+origin 2 2 0.111 {'best': 2, 'rest': 4}
+Volume 140 163 0.095 {'best': 2, 'rest': 6}
+Volume 163 173 0.067 {'best': 1, 'rest': 1}
+origin 3 3 0.058 {'best': 2, 'rest': 15}
+Volume 173 200 0.056 {'best': 1, 'rest': 2}
+Volume 318 351 0.048 {'best': 1, 'rest': 3}
+Model 71 72 0.048 {'best': 1, 'rest': 3}
+Model 72 73 0.042 {'best': 1, 'rest': 4}
+Model 78 79 0.042 {'best': 1, 'rest': 4}
+Model 80 81 0.042 {'best': 1, 'rest': 4}
+Model 81 9223372036854775807 0.042 {'best': 1, 'rest': 4}
+Clndrs -9223372036854775807 6 0.037 {'best': 1, 'rest': 1, 8: 1, 20: 1, 2: 1, 12: 1}
+Volume -9223372036854775807 90 0.033 {'best': 1, 'rest': 6}
+Volume 90 140 0.03 {'best': 1, 'rest': 5, 5: 1, 6: 1}
+Model 77 78 0.03 {'best': 1, 'rest': 7}
+Clndrs 6 9223372036854775807 0.018 {'best': 1, 'rest': 15}
+Volume 200 232 0.0 {'rest': 4}
+Volume 232 267 0.0 {'rest': 5}
+Volume 267 318 0.0 {'rest': 8}
+Volume 351 9223372036854775807 0.0 {'rest': 2}
+Model -9223372036854775807 70 0.0 {'rest': 2}
+Model 70 71 0.0 {'rest': 2}
+Model 73 75 0.0 {'rest': 3, 4: 2}
+Model 75 76 0.0 {'rest': 8}
+Model 76 77 0.0 {'rest': 2}
+{0: ([], 'Model'), 1: ([], 'origin'), 2: ([], 'Volume')}
+{0: ([], 'Model')}
+{0: ([], 'Model')}
+{0: ([], 'Model'), 1: ([], 'origin')}
+{0: ([], 'Model'), 1: ([], 'origin')}
+{0: ([], 'Model'), 1: ([], 'origin'), 2: ([], 'Volume')}
+{0: ([], 'Model'), 1: ([], 'origin'), 2: ([], 'Volume')}
+{0: ([], 'Model'), 1: ([], 'origin'), 2: ([], 'Volume')}
+
+-----------
+ explain = {0: ([], 'Model')}
+all                      {0: (2970.42, 'Lbs-'), 1: (15.57, 'Acc+'), 2: (23.84, 'Mpg+')} {0: (846.84, 'Lbs-'), 1: (2.76, 'Acc+'), 2: (8.34, 'Mpg+')}
+sway with  6  evals {0: (2835.17, 'Lbs-'), 1: (16.0, 'Acc+'), 2: (20.0, 'Mpg+')} {0: (383.38, 'Lbs-'), 1: (2.35, 'Acc+'), 2: (0.0, 'Mpg+')}
+sway with  6  evals {0: (3055.34, 'Lbs-'), 1: (15.81, 'Acc+'), 2: (25.52, 'Mpg+')} {0: (747.88, 'Lbs-'), 1: (2.95, 'Acc+'), 2: (6.32, 'Mpg+')}
+sort with  398  evals {0: (4626.09, 'Lbs-'), 1: (12.59, 'Acc+'), 2: (10.0, 'Mpg+')} {0: (401.59, 'Lbs-'), 1: (1.46, 'Acc+'), 2: (0.0, 'Mpg+')}
+✅ pass: xpln

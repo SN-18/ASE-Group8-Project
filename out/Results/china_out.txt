@@ -1,0 +1,268 @@
+▶️  sway ------------------------------------------------------------
+
+all  {0: (4277.64, 'N_effort-')}
+     {0: (7071.25, 'N_effort-')}
+
+best  {0: (2254.8, 'N_effort-')}
+     {0: (2056.49, 'N_effort-')}
+
+rest  {0: (4389.0, 'N_effort-')}
+     {0: (7720.18, 'N_effort-')}
+
+all ~= best? {0: (True, 'N_effort-')}
+best ~= rest? {0: (True, 'N_effort-')}
+✅ pass: sway
+
+▶️  xpln ------------------------------------------------------------
+
+
+AFP -9223372036854775807 558
+AFP 558 1416
+AFP 1416 2376
+AFP 2376 3963
+AFP 3963 9223372036854775807
+
+
+Input -9223372036854775807 278
+Input 278 862
+Input 862 9223372036854775807
+
+
+Output -9223372036854775807 233
+Output 233 404
+Output 404 519
+Output 519 616
+Output 616 9223372036854775807
+
+
+Enquiry -9223372036854775807 75
+Enquiry 75 135
+Enquiry 135 171
+Enquiry 171 249
+Enquiry 249 323
+Enquiry 323 399
+Enquiry 399 491
+Enquiry 491 639
+Enquiry 639 9223372036854775807
+
+
+File -9223372036854775807 91
+File 91 252
+File 252 394
+File 394 620
+File 620 1091
+File 1091 9223372036854775807
+
+
+Interface -9223372036854775807 50
+Interface 50 131
+Interface 131 360
+Interface 360 9223372036854775807
+
+
+Added -9223372036854775807 376
+Added 376 1219
+Added 1219 2234
+Added 2234 2922
+Added 2922 9223372036854775807
+
+
+Changed -9223372036854775807 170
+Changed 170 466
+Changed 466 775
+Changed 775 984
+Changed 984 9223372036854775807
+
+
+Deleted -9223372036854775807 86
+Deleted 86 128
+Deleted 128 9223372036854775807
+
+
+PDR_AFP -9223372036854775807 13.6
+PDR_AFP 13.6 17.7
+PDR_AFP 17.7 23.6
+PDR_AFP 23.6 29
+PDR_AFP 29 35.7
+PDR_AFP 35.7 37.1
+PDR_AFP 37.1 9223372036854775807
+
+
+PDR_UFP -9223372036854775807 16
+PDR_UFP 16 22.3
+PDR_UFP 22.3 26.6
+PDR_UFP 26.6 37.6
+PDR_UFP 37.6 9223372036854775807
+
+
+NPDR_AFP -9223372036854775807 10
+NPDR_AFP 10 16.1
+NPDR_AFP 16.1 21.3
+NPDR_AFP 21.3 29
+NPDR_AFP 29 31.8
+NPDR_AFP 31.8 43
+NPDR_AFP 43 44.7
+NPDR_AFP 44.7 9223372036854775807
+
+
+NPDU_UFP -9223372036854775807 17.6
+NPDU_UFP 17.6 21.9
+NPDU_UFP 21.9 32.1
+NPDU_UFP 32.1 45.3
+NPDU_UFP 45.3 9223372036854775807
+
+
+Resource -9223372036854775807 1
+Resource 1 2
+Resource 2 3
+Resource 3 9223372036854775807
+
+
+DevType -9223372036854775807 9223372036854775807
+
+
+Duration -9223372036854775807 13
+Duration 13 19
+Duration 19 24
+Duration 24 30
+Duration 30 42
+Duration 42 9223372036854775807
+
+Deleted -9223372036854775807 86 0.508 {'best': 15, 'rest': 58}
+DevType -9223372036854775807 9223372036854775807 0.5 {'best': 15, 'rest': 60}
+AFP -9223372036854775807 558 0.455 {'best': 13, 'rest': 47}
+Added -9223372036854775807 376 0.455 {'best': 13, 'rest': 47}
+Input -9223372036854775807 278 0.446 {'best': 13, 'rest': 49}
+Interface -9223372036854775807 50 0.438 {'best': 13, 'rest': 51}
+Changed -9223372036854775807 170 0.438 {'best': 13, 'rest': 51}
+Resource -9223372036854775807 1 0.384 {'best': 11, 'rest': 40}
+File -9223372036854775807 91 0.371 {'best': 11, 'rest': 43}
+Output -9223372036854775807 233 0.288 {'best': 9, 'rest': 37, 5: 1, 15: 1}
+Enquiry -9223372036854775807 75 0.247 {'best': 8, 'rest': 35, 6: 1, 12: 1}
+Resource 1 2 0.142 {'best': 4, 'rest': 14}
+File 91 252 0.109 {'best': 3, 'rest': 10}
+PDR_AFP -9223372036854775807 13.6 0.1 {'best': 3, 'rest': 8, 5: 1, 24: 1, 4: 1, 11: 1}
+NPDR_AFP -9223372036854775807 10 0.1 {'best': 3, 'rest': 10, 6: 1, 25: 1}
+NPDR_AFP 10 16.1 0.1 {'best': 3, 'rest': 12}
+PDR_UFP -9223372036854775807 16 0.096 {'best': 3, 'rest': 9, 5: 1, 26: 1, 4: 1, 12: 1}
+NPDU_UFP -9223372036854775807 17.6 0.089 {'best': 3, 'rest': 11, 6: 1, 25: 1, 4: 1, 13: 1}
+Interface 50 131 0.082 {'best': 2, 'rest': 5}
+PDR_UFP 16 22.3 0.082 {'best': 2, 'rest': 5}
+Input 278 862 0.067 {'best': 2, 'rest': 8}
+Enquiry 491 639 0.067 {'best': 1}
+Changed 466 775 0.067 {'best': 1}
+PDR_AFP 35.7 37.1 0.067 {'best': 1}
+NPDR_AFP 43 44.7 0.067 {'best': 1}
+Duration 24 30 0.067 {'best': 1}
+Output 404 519 0.053 {'best': 1, 'rest': 1}
+PDR_UFP 26.6 37.6 0.053 {'best': 1, 'rest': 1}
+NPDU_UFP 32.1 45.3 0.053 {'best': 1, 'rest': 1}
+Duration 19 24 0.053 {'best': 1, 'rest': 1}
+Duration -9223372036854775807 13 0.051 {'best': 2, 'rest': 9, 7: 1, 28: 1, 4: 1, 12: 1}
+AFP 1416 2376 0.044 {'best': 1, 'rest': 2}
+File 394 620 0.038 {'best': 1, 'rest': 3}
+Added 1219 2234 0.033 {'best': 1, 'rest': 4}
+PDR_AFP 17.7 23.6 0.033 {'best': 1, 'rest': 4}
+NPDR_AFP 16.1 21.3 0.033 {'best': 1, 'rest': 4}
+NPDR_AFP 21.3 29 0.03 {'best': 1, 'rest': 5}
+Added 376 1219 0.024 {'best': 1, 'rest': 7}
+Changed 170 466 0.024 {'best': 1, 'rest': 7}
+NPDU_UFP 21.9 32.1 0.024 {'best': 1, 'rest': 7}
+AFP 558 1416 0.022 {'best': 1, 'rest': 8}
+PDR_AFP 13.6 17.7 0.022 {'best': 1, 'rest': 8}
+AFP 2376 3963 0.0 {'rest': 2}
+AFP 3963 9223372036854775807 0.0 {'rest': 1}
+Input 862 9223372036854775807 0.0 {'rest': 3}
+Output 233 404 0.0 {'rest': 5}
+Output 519 616 0.0 {'rest': 1}
+Output 616 9223372036854775807 0.0 {'rest': 1}
+Enquiry 75 135 0.0 {'rest': 5}
+Enquiry 135 171 0.0 {'rest': 2}
+Enquiry 171 249 0.0 {'rest': 2}
+Enquiry 249 323 0.0 {'rest': 1}
+Enquiry 323 399 0.0 {'rest': 1}
+Enquiry 399 491 0.0 {'rest': 1}
+Enquiry 639 9223372036854775807 0.0 {'rest': 1}
+File 252 394 0.0 {'rest': 2}
+File 620 1091 0.0 {'rest': 1}
+File 1091 9223372036854775807 0.0 {'rest': 1}
+Interface 131 360 0.0 {'rest': 3}
+Interface 360 9223372036854775807 0.0 {'rest': 1}
+Added 2234 2922 0.0 {'rest': 1}
+Added 2922 9223372036854775807 0.0 {'rest': 1}
+Changed 775 984 0.0 {'rest': 1}
+Changed 984 9223372036854775807 0.0 {'rest': 1}
+Deleted 86 128 0.0 {'rest': 1}
+Deleted 128 9223372036854775807 0.0 {'rest': 1}
+PDR_AFP 23.6 29 0.0 {'rest': 3}
+PDR_AFP 29 35.7 0.0 {'rest': 1}
+PDR_AFP 37.1 9223372036854775807 0.0 {'rest': 1}
+PDR_UFP 22.3 26.6 0.0 {'rest': 6}
+PDR_UFP 37.6 9223372036854775807 0.0 {'rest': 1}
+NPDR_AFP 29 31.8 0.0 {'rest': 2}
+NPDR_AFP 31.8 43 0.0 {'rest': 1}
+NPDR_AFP 44.7 9223372036854775807 0.0 {'rest': 1}
+NPDU_UFP 17.6 21.9 0.0 {'rest': 2}
+NPDU_UFP 45.3 9223372036854775807 0.0 {'rest': 1}
+Resource 2 3 0.0 {'rest': 1}
+Resource 3 9223372036854775807 0.0 {'rest': 5}
+Duration 13 19 0.0 {'rest': 8}
+Duration 30 42 0.0 {'rest': 1}
+Duration 42 9223372036854775807 0.0 {'rest': 1}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP'), 12: ([], 'PDR_UFP'), 13: ([], 'NPDU_UFP'), 14: ([], 'Duration')}
+{0: ([], 'DevType')}
+{0: ([], 'DevType')}
+{0: ([], 'DevType'), 1: ([], 'AFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP'), 12: ([], 'PDR_UFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP'), 12: ([], 'PDR_UFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP'), 12: ([], 'PDR_UFP'), 13: ([], 'NPDU_UFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP'), 12: ([], 'PDR_UFP'), 13: ([], 'NPDU_UFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP'), 12: ([], 'PDR_UFP'), 13: ([], 'NPDU_UFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP'), 12: ([], 'PDR_UFP'), 13: ([], 'NPDU_UFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP'), 12: ([], 'PDR_UFP'), 13: ([], 'NPDU_UFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP'), 12: ([], 'PDR_UFP'), 13: ([], 'NPDU_UFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP'), 12: ([], 'PDR_UFP'), 13: ([], 'NPDU_UFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP'), 12: ([], 'PDR_UFP'), 13: ([], 'NPDU_UFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP'), 12: ([], 'PDR_UFP'), 13: ([], 'NPDU_UFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP'), 12: ([], 'PDR_UFP'), 13: ([], 'NPDU_UFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP'), 12: ([], 'PDR_UFP'), 13: ([], 'NPDU_UFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP'), 12: ([], 'PDR_UFP'), 13: ([], 'NPDU_UFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP'), 12: ([], 'PDR_UFP'), 13: ([], 'NPDU_UFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP'), 12: ([], 'PDR_UFP'), 13: ([], 'NPDU_UFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP'), 12: ([], 'PDR_UFP'), 13: ([], 'NPDU_UFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP'), 12: ([], 'PDR_UFP'), 13: ([], 'NPDU_UFP')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP'), 12: ([], 'PDR_UFP'), 13: ([], 'NPDU_UFP'), 14: ([], 'Duration')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP'), 12: ([], 'PDR_UFP'), 13: ([], 'NPDU_UFP'), 14: ([], 'Duration')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP'), 12: ([], 'PDR_UFP'), 13: ([], 'NPDU_UFP'), 14: ([], 'Duration')}
+{0: ([], 'DevType'), 1: ([], 'AFP'), 2: ([], 'Added'), 3: ([], 'Input'), 4: ([], 'Interface'), 5: ([], 'Changed'), 6: ([], 'Resource'), 7: ([], 'File'), 8: ([], 'Output'), 9: ([], 'Enquiry'), 10: ([], 'PDR_AFP'), 11: ([], 'NPDR_AFP'), 12: ([], 'PDR_UFP'), 13: ([], 'NPDU_UFP'), 14: ([], 'Duration')}
+
+-----------
+ explain = {0: ([], 'DevType')}
+all                      {0: (4277.64, 'N_effort-')} {0: (7071.25, 'N_effort-')}
+sway with  6  evals {0: (3789.47, 'N_effort-')} {0: (7649.3, 'N_effort-')}
+sway with  6  evals {0: (4277.64, 'N_effort-')} {0: (7071.25, 'N_effort-')}
+sort with  499  evals {0: (3002.57, 'N_effort-')} {0: (2408.84, 'N_effort-')}
+✅ pass: xpln

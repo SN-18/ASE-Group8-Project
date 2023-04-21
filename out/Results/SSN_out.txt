@@ -1,0 +1,379 @@
+▶️  sway ------------------------------------------------------------
+
+all  {0: (44.53, 'PSNR-'), 1: (1658.0, 'Energy-')}
+     {0: (6.47, 'PSNR-'), 1: (1610.66, 'Energy-')}
+
+best  {0: (44.84, 'PSNR-'), 1: (1049.76, 'Energy-')}
+     {0: (4.9, 'PSNR-'), 1: (516.99, 'Energy-')}
+
+rest  {0: (44.8, 'PSNR-'), 1: (1609.6, 'Energy-')}
+     {0: (6.48, 'PSNR-'), 1: (1621.26, 'Energy-')}
+
+all ~= best? {0: (True, 'PSNR-'), 1: (True, 'Energy-')}
+best ~= rest? {0: (True, 'PSNR-'), 1: (True, 'Energy-')}
+✅ pass: sway
+
+▶️  xpln ------------------------------------------------------------
+
+
+no_mbtree 0 0
+no_mbtree 1 1
+
+
+no_asm 0 0
+no_asm 1 1
+
+
+no_cabac 0 0
+no_cabac 1 1
+
+
+no_scenecut 0 0
+no_scenecut 1 1
+
+
+Aq_strength -9223372036854775807 1.7
+Aq_strength 1.7 3
+Aq_strength 3 5
+Aq_strength 5 6
+Aq_strength 6 7
+Aq_strength 7 9
+Aq_strength 9 12
+Aq_strength 12 14
+Aq_strength 14 15
+Aq_strength 15 9223372036854775807
+
+
+Bframes -9223372036854775807 2
+Bframes 2 3
+Bframes 3 5
+Bframes 5 7
+Bframes 7 10
+Bframes 10 11
+Bframes 11 13
+Bframes 13 15
+Bframes 15 18
+Bframes 18 19
+Bframes 19 21
+Bframes 21 23
+Bframes 23 24
+Bframes 24 9223372036854775807
+
+
+Qcomp -9223372036854775807 1
+Qcomp 1 1.1
+Qcomp 1.1 4
+Qcomp 4 5
+Qcomp 5 6
+Qcomp 6 7
+Qcomp 7 8
+Qcomp 8 9223372036854775807
+
+
+Qp -9223372036854775807 1
+Qp 1 5
+Qp 5 8
+Qp 8 11
+Qp 11 17
+Qp 17 24
+Qp 24 28
+Qp 28 34
+Qp 34 39
+Qp 39 41
+Qp 41 44
+Qp 44 49
+Qp 49 9223372036854775807
+
+
+Ref -9223372036854775807 0
+Ref 0 3
+Ref 3 4
+Ref 4 6
+Ref 6 7
+Ref 7 8
+Ref 8 9
+Ref 9 9223372036854775807
+
+
+Rc_lookahead -9223372036854775807 1
+Rc_lookahead 1 23
+Rc_lookahead 23 40
+Rc_lookahead 40 54
+Rc_lookahead 54 90
+Rc_lookahead 90 96
+Rc_lookahead 96 119
+Rc_lookahead 119 141
+Rc_lookahead 141 148
+Rc_lookahead 148 171
+Rc_lookahead 171 188
+Rc_lookahead 188 201
+Rc_lookahead 201 219
+Rc_lookahead 219 237
+Rc_lookahead 237 9223372036854775807
+
+
+B_bias -9223372036854775807 -88
+B_bias -88 -74
+B_bias -74 -64
+B_bias -64 -48
+B_bias -48 -27
+B_bias -27 -8
+B_bias -8 3
+B_bias 3 18
+B_bias 18 44
+B_bias 44 59
+B_bias 59 73
+B_bias 73 86
+B_bias 86 94
+B_bias 94 9223372036854775807
+
+
+Threads -9223372036854775807 4
+Threads 4 11
+Threads 11 21
+Threads 21 46
+Threads 46 52
+Threads 52 63
+Threads 63 72
+Threads 72 86
+Threads 86 97
+Threads 97 105
+Threads 105 115
+Threads 115 123
+Threads 123 9223372036854775807
+
+
+Keyint -9223372036854775807 19
+Keyint 19 334
+Keyint 334 431
+Keyint 431 499
+Keyint 499 559
+Keyint 559 697
+Keyint 697 751
+Keyint 751 831
+Keyint 831 895
+Keyint 895 960
+Keyint 960 9223372036854775807
+
+
+Crf -9223372036854775807 202
+Crf 202 234000000000000.0
+Crf 234000000000000.0 257000000000000.0
+Crf 257000000000000.0 310000000000000.0
+Crf 310000000000000.0 322000000000000.0
+Crf 322000000000000.0 435000000000000.0
+Crf 435000000000000.0 9223372036854775807
+
+
+Scenecut -9223372036854775807 2
+Scenecut 2 9
+Scenecut 9 14
+Scenecut 14 21
+Scenecut 21 36
+Scenecut 36 40
+Scenecut 40 49
+Scenecut 49 56
+Scenecut 56 68
+Scenecut 68 75
+Scenecut 75 82
+Scenecut 82 89
+Scenecut 89 92
+Scenecut 92 9223372036854775807
+
+
+Seek -9223372036854775807 1
+Seek 1 110
+Seek 110 203
+Seek 203 266
+Seek 266 418
+Seek 418 542
+Seek 542 623
+Seek 623 875
+Seek 875 1039
+Seek 1039 1094
+Seek 1094 1173
+Seek 1173 9223372036854775807
+
+
+Ipratio -9223372036854775807 1.8
+Ipratio 1.8 3
+Ipratio 3 4
+Ipratio 4 6
+Ipratio 6 8
+Ipratio 8 12
+Ipratio 12 13
+Ipratio 13 15
+Ipratio 15 9223372036854775807
+
+no_asm 1 1 0.805 {'best': 205, 'rest': 179}
+no_scenecut 0 0 0.573 {'best': 209, 'rest': 622}
+no_cabac 0 0 0.557 {'best': 209, 'rest': 665}
+no_mbtree 0 0 0.556 {'best': 205, 'rest': 626}
+Crf -9223372036854775807 202 0.502 {'best': 209, 'rest': 828}
+Rc_lookahead 96 119 0.006 {'best': 2, 'rest': 4}
+Ref 0 3 0.006 {'best': 2, 'rest': 2, 16: 1, 1: 2}
+Keyint 831 895 0.006 {'best': 2, 'rest': 5}
+B_bias 3 18 0.004 {'best': 2, 'rest': 10}
+Qcomp 1 1.1 0.004 {'best': 1, 'rest': 1}
+Seek 418 542 0.004 {'best': 1, 'rest': 1}
+B_bias -27 -8 0.003 {'best': 1, 'rest': 2}
+Scenecut 68 75 0.003 {'best': 1, 'rest': 3}
+Seek 1173 9223372036854775807 0.003 {'best': 1, 'rest': 3}
+Keyint 895 960 0.002 {'best': 1, 'rest': 5}
+Scenecut 82 89 0.002 {'best': 1, 'rest': 5}
+Seek 110 203 0.002 {'best': 1, 'rest': 5}
+Bframes 18 19 0.002 {'best': 1, 'rest': 6}
+Rc_lookahead 171 188 0.002 {'best': 1, 'rest': 6}
+Bframes 7 10 0.002 {'best': 1, 'rest': 5, 102: 1, 339: 1}
+Scenecut 2 9 0.002 {'best': 1, 'rest': 8}
+Rc_lookahead 54 90 0.001 {'best': 1, 'rest': 7, 205: 1, 301: 1}
+B_bias 44 59 0.001 {'best': 1, 'rest': 9}
+Threads 21 46 0.001 {'best': 1, 'rest': 5, 1: 3, 10: 1}
+no_mbtree 1 1 0.001 {'best': 4, 'rest': 210}
+Qp -9223372036854775807 1 0.001 {'best': 1, 'rest': 11}
+Keyint 559 697 0.001 {'best': 1, 'rest': 9, 105: 1, 336: 1}
+Qcomp -9223372036854775807 1 0.001 {'best': 2, 'rest': 51, 206: 1, 777: 1}
+Aq_strength -9223372036854775807 1.7 0.001 {'best': 2, 'rest': 52, 206: 1, 745: 1}
+Qp 49 9223372036854775807 0.001 {'best': 1, 'rest': 12}
+Threads 86 97 0.001 {'best': 1, 'rest': 13}
+Qp 28 34 0.001 {'best': 1, 'rest': 13, 5: 1, 312: 1}
+Scenecut 75 82 0.001 {'best': 1, 'rest': 15}
+Ref 8 9 0.001 {'best': 1, 'rest': 28}
+Aq_strength 1.7 3 0.001 {'best': 1, 'rest': 29}
+no_asm 0 0 0.0 {'best': 4, 'rest': 657}
+Ipratio -9223372036854775807 1.8 0.0 {'best': 1, 'rest': 45, 208: 1, 758: 1}
+Bframes 2 3 0.0 {'best': 1, 'rest': 71}
+no_cabac 1 1 0.0 {'rest': 171}
+no_scenecut 1 1 0.0 {'rest': 214}
+Aq_strength 3 5 0.0 {'rest': 1}
+Aq_strength 5 6 0.0 {'rest': 3}
+Aq_strength 6 7 0.0 {'rest': 1}
+Aq_strength 7 9 0.0 {'rest': 1}
+Aq_strength 9 12 0.0 {'rest': 1}
+Aq_strength 12 14 0.0 {'rest': 1}
+Aq_strength 14 15 0.0 {'rest': 1}
+Aq_strength 15 9223372036854775807 0.0 {'rest': 1}
+Bframes -9223372036854775807 2 0.0 {'rest': 13}
+Bframes 3 5 0.0 {'rest': 22}
+Bframes 5 7 0.0 {'rest': 10}
+Bframes 10 11 0.0 {'rest': 4}
+Bframes 11 13 0.0 {'rest': 14}
+Bframes 13 15 0.0 {'rest': 7}
+Bframes 15 18 0.0 {'rest': 1, 104: 1, 306: 1}
+Bframes 19 21 0.0 {'rest': 10}
+Bframes 21 23 0.0 {'rest': 3}
+Bframes 23 24 0.0 {'rest': 3}
+Bframes 24 9223372036854775807 0.0 {'rest': 22}
+Qcomp 1.1 4 0.0 {'rest': 1}
+Qcomp 4 5 0.0 {'rest': 1}
+Qcomp 5 6 0.0 {'rest': 1}
+Qcomp 6 7 0.0 {'rest': 2}
+Qcomp 7 8 0.0 {'rest': 1}
+Qcomp 8 9223372036854775807 0.0 {'rest': 1}
+Qp 1 5 0.0 {'rest': 6}
+Qp 5 8 0.0 {'rest': 6}
+Qp 8 11 0.0 {'rest': 11}
+Qp 11 17 0.0 {'rest': 11, 200: 1, 335: 1}
+Qp 17 24 0.0 {'rest': 4, 1: 1, 72: 1}
+Qp 24 28 0.0 {'rest': 16}
+Qp 34 39 0.0 {'rest': 6}
+Qp 39 41 0.0 {'rest': 10}
+Qp 41 44 0.0 {'rest': 7}
+Qp 44 49 0.0 {'rest': 4}
+Ref -9223372036854775807 0 0.0 {'rest': 26}
+Ref 3 4 0.0 {'rest': 26}
+Ref 4 6 0.0 {'rest': 5, 128: 1, 326: 1}
+Ref 6 7 0.0 {'rest': 7}
+Ref 7 8 0.0 {'rest': 8}
+Ref 9 9223372036854775807 0.0 {'rest': 5}
+Rc_lookahead -9223372036854775807 1 0.0 {'rest': 23}
+Rc_lookahead 1 23 0.0 {'rest': 5}
+Rc_lookahead 23 40 0.0 {'rest': 71}
+Rc_lookahead 40 54 0.0 {'rest': 15}
+Rc_lookahead 90 96 0.0 {'rest': 3}
+Rc_lookahead 119 141 0.0 {'rest': 13}
+Rc_lookahead 141 148 0.0 {'rest': 1}
+Rc_lookahead 148 171 0.0 {'rest': 346}
+Rc_lookahead 188 201 0.0 {'rest': 7}
+Rc_lookahead 201 219 0.0 {'rest': 8}
+Rc_lookahead 219 237 0.0 {'rest': 5}
+Rc_lookahead 237 9223372036854775807 0.0 {'rest': 21}
+B_bias -9223372036854775807 -88 0.0 {'rest': 16}
+B_bias -88 -74 0.0 {'rest': 10}
+B_bias -74 -64 0.0 {'rest': 7}
+B_bias -64 -48 0.0 {'rest': 8}
+B_bias -48 -27 0.0 {'rest': 12, 72: 1, 334: 1}
+B_bias -8 3 0.0 {'rest': 71}
+B_bias 18 44 0.0 {'rest': 12, 133: 1, 318: 1}
+B_bias 59 73 0.0 {'rest': 10}
+B_bias 73 86 0.0 {'rest': 5}
+B_bias 86 94 0.0 {'rest': 2}
+B_bias 94 9223372036854775807 0.0 {'rest': 10}
+Threads -9223372036854775807 4 0.0 {'rest': 75}
+Threads 4 11 0.0 {'rest': 20}
+Threads 11 21 0.0 {'rest': 16}
+Threads 46 52 0.0 {'rest': 4}
+Threads 52 63 0.0 {'rest': 7}
+Threads 63 72 0.0 {'rest': 7}
+Threads 72 86 0.0 {'rest': 3, 103: 1, 317: 1}
+Threads 97 105 0.0 {'rest': 13}
+Threads 105 115 0.0 {'rest': 3}
+Threads 115 123 0.0 {'rest': 2}
+Threads 123 9223372036854775807 0.0 {'rest': 13}
+Keyint -9223372036854775807 19 0.0 {'rest': 13}
+Keyint 19 334 0.0 {'rest': 2, 4: 1, 1: 3}
+Keyint 334 431 0.0 {'rest': 5}
+Keyint 431 499 0.0 {'rest': 7}
+Keyint 499 559 0.0 {'rest': 9}
+Keyint 697 751 0.0 {'rest': 10}
+Keyint 751 831 0.0 {'rest': 7}
+Keyint 960 9223372036854775807 0.0 {'rest': 14}
+Crf 202 234000000000000.0 0.0 {'rest': 1}
+Crf 234000000000000.0 257000000000000.0 0.0 {'rest': 1}
+Crf 257000000000000.0 310000000000000.0 0.0 {'rest': 3}
+Crf 310000000000000.0 322000000000000.0 0.0 {'rest': 1}
+Crf 322000000000000.0 435000000000000.0 0.0 {'rest': 1}
+Crf 435000000000000.0 9223372036854775807 0.0 {'rest': 1}
+Scenecut -9223372036854775807 2 0.0 {'rest': 23}
+Scenecut 9 14 0.0 {'rest': 6}
+Scenecut 14 21 0.0 {'rest': 3}
+Scenecut 21 36 0.0 {'rest': 4, 97: 1, 328: 1}
+Scenecut 36 40 0.0 {'rest': 58}
+Scenecut 40 49 0.0 {'rest': 9}
+Scenecut 49 56 0.0 {'rest': 30}
+Scenecut 56 68 0.0 {'rest': 7, 108: 1, 318: 1}
+Scenecut 89 92 0.0 {'rest': 3}
+Scenecut 92 9223372036854775807 0.0 {'rest': 16}
+Seek -9223372036854775807 1 0.0 {'rest': 155}
+Seek 1 110 0.0 {'rest': 4}
+Seek 203 266 0.0 {'rest': 5}
+Seek 266 418 0.0 {'rest': 2, 102: 1, 326: 1}
+Seek 542 623 0.0 {'rest': 6}
+Seek 623 875 0.0 {'rest': 6, 104: 1, 319: 1}
+Seek 875 1039 0.0 {'rest': 1}
+Seek 1039 1094 0.0 {'rest': 2}
+Seek 1094 1173 0.0 {'rest': 1}
+Ipratio 1.8 3 0.0 {'rest': 24}
+Ipratio 3 4 0.0 {'rest': 1}
+Ipratio 4 6 0.0 {'rest': 1}
+Ipratio 6 8 0.0 {'rest': 2}
+Ipratio 8 12 0.0 {'rest': 1}
+Ipratio 12 13 0.0 {'rest': 1}
+Ipratio 13 15 0.0 {'rest': 1}
+Ipratio 15 9223372036854775807 0.0 {'rest': 2}
+{0: ([], 'no_scenecut'), 1: ([], 'no_cabac'), 2: ([], 'no_mbtree'), 3: ([], 'Crf')}
+{0: ([], 'no_scenecut'), 1: ([], 'no_cabac'), 2: ([], 'no_mbtree'), 3: ([], 'Crf')}
+{0: ([], 'no_scenecut')}
+{0: ([], 'no_scenecut')}
+{0: ([], 'no_scenecut'), 1: ([], 'no_cabac')}
+{0: ([], 'no_scenecut'), 1: ([], 'no_cabac')}
+{0: ([], 'no_scenecut'), 1: ([], 'no_cabac'), 2: ([], 'no_mbtree')}
+{0: ([], 'no_scenecut'), 1: ([], 'no_cabac'), 2: ([], 'no_mbtree')}
+
+-----------
+ explain = {0: ([], 'no_scenecut'), 1: ([], 'no_cabac'), 2: ([], 'no_mbtree'), 3: ([], 'Crf')}
+all                      {0: (44.53, 'PSNR-'), 1: (1658.0, 'Energy-')} {0: (6.47, 'PSNR-'), 1: (1610.66, 'Energy-')}
+sway with  9  evals {0: (43.31, 'PSNR-'), 1: (2861.18, 'Energy-')} {0: (5.22, 'PSNR-'), 1: (1595.72, 'Energy-')}
+sway with  9  evals {0: (44.08, 'PSNR-'), 1: (2206.32, 'Energy-')} {0: (6.18, 'PSNR-'), 1: (1900.77, 'Energy-')}
+sort with  53662  evals {0: (45.31, 'PSNR-'), 1: (6834.8, 'Energy-')} {0: (4.33, 'PSNR-'), 1: (2485.24, 'Energy-')}
+✅ pass: xpln

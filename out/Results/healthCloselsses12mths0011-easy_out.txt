@@ -1,0 +1,57 @@
+▶️  sway ------------------------------------------------------------
+
+all  {0: (92.29, 'MRE-'), 1: (-8.53, 'ACC+'), 2: (17.79, 'PRED40+')}
+     {0: (48.43, 'MRE-'), 1: (5.71, 'ACC+'), 2: (34.13, 'PRED40+')}
+
+best  {0: (94.81, 'MRE-'), 1: (-8.84, 'ACC+'), 2: (16.03, 'PRED40+')}
+     {0: (46.93, 'MRE-'), 1: (5.57, 'ACC+'), 2: (33.06, 'PRED40+')}
+
+rest  {0: (89.44, 'MRE-'), 1: (-7.7, 'ACC+'), 2: (18.96, 'PRED40+')}
+     {0: (49.11, 'MRE-'), 1: (5.89, 'ACC+'), 2: (34.99, 'PRED40+')}
+
+all ~= best? {0: (True, 'MRE-'), 1: (True, 'ACC+'), 2: (True, 'PRED40+')}
+best ~= rest? {0: (True, 'MRE-'), 1: (True, 'ACC+'), 2: (True, 'PRED40+')}
+✅ pass: sway
+
+▶️  xpln ------------------------------------------------------------
+
+
+N_estimators -9223372036854775807 180
+N_estimators 180 190
+N_estimators 190 9223372036854775807
+
+
+criterion absolute_error absolute_error
+criterion poisson poisson
+criterion squared_error squared_error
+
+
+Min_sample_leaves -9223372036854775807 9223372036854775807
+
+
+Min_impurity_decrease -9223372036854775807 9223372036854775807
+
+
+Max_depth -9223372036854775807 9223372036854775807
+
+criterion squared_error squared_error 0.265 {'best': 35, 'rest': 97}
+criterion absolute_error absolute_error 0.139 {'best': 23, 'rest': 103}
+criterion poisson poisson 0.107 {'best': 20, 'rest': 112}
+N_estimators -9223372036854775807 180 0.041 {'best': 7, 'rest': 14, 14: 2, 32: 1, 1: 8, 9: 1, 2: 3, 3: 1, 13: 1, 4: 1, 8: 1}
+Max_depth -9223372036854775807 9223372036854775807 0.03 {'best': 6, 'rest': 14, 10: 1, 34: 2, 4: 2, 14: 1, 1: 11, 7: 2, 13: 1, 2: 2, 3: 1, 12: 1}
+Min_impurity_decrease -9223372036854775807 9223372036854775807 0.023 {'best': 5, 'rest': 14, 16: 1, 1: 12, 2: 3, 6: 1, 17: 1, 4: 2, 13: 1}
+N_estimators 190 9223372036854775807 0.019 {'best': 3, 'rest': 12}
+Min_sample_leaves -9223372036854775807 9223372036854775807 0.009 {'best': 3, 'rest': 15, 6: 3, 31: 1, 5: 2, 11: 1, 1: 13, 16: 1, 2: 1, 22: 1, 13: 1}
+N_estimators 180 190 0.003 {'best': 1, 'rest': 15}
+{0: ([], 'criterion')}
+{0: ([], 'criterion')}
+{0: ([], 'criterion')}
+{0: ([], 'criterion')}
+
+-----------
+ explain = {0: ([], 'criterion')}
+all                      {0: (92.29, 'MRE-'), 1: (-8.53, 'ACC+'), 2: (17.79, 'PRED40+')} {0: (48.43, 'MRE-'), 1: (5.71, 'ACC+'), 2: (34.13, 'PRED40+')}
+sway with  8  evals {0: (96.15, 'MRE-'), 1: (-8.89, 'ACC+'), 2: (14.96, 'PRED40+')} {0: (45.65, 'MRE-'), 1: (5.5, 'ACC+'), 2: (32.19, 'PRED40+')}
+sway with  8  evals {0: (78.21, 'MRE-'), 1: (-6.51, 'ACC+'), 2: (26.79, 'PRED40+')} {0: (54.25, 'MRE-'), 1: (6.08, 'ACC+'), 2: (38.91, 'PRED40+')}
+sort with  10000  evals {0: (94.47, 'MRE-'), 1: (-8.78, 'ACC+'), 2: (16.23, 'PRED40+')} {0: (47.13, 'MRE-'), 1: (5.58, 'ACC+'), 2: (33.22, 'PRED40+')}
+✅ pass: xpln

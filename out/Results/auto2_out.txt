@@ -1,0 +1,427 @@
+  sway ------------------------------------------------------------
+
+all  {0: (22.37, 'CityMPG+'), 1: (29.09, 'HighwayMPG+'), 2: (3072.9, 'Weight-'), 3: (19.51, 'Class-')}
+     {0: (5.62, 'CityMPG+'), 1: (5.33, 'HighwayMPG+'), 2: (589.9, 'Weight-'), 3: (9.66, 'Class-')}
+
+best  {0: (20.5, 'CityMPG+'), 1: (28.33, 'HighwayMPG+'), 2: (3241.67, 'Weight-'), 3: (14.78, 'Class-')}
+     {0: (3.99, 'CityMPG+'), 1: (6.15, 'HighwayMPG+'), 2: (568.05, 'Weight-'), 3: (2.02, 'Class-')}
+
+rest  {0: (21.58, 'CityMPG+'), 1: (28.13, 'HighwayMPG+'), 2: (3125.42, 'Weight-'), 3: (19.82, 'Class-')}
+     {0: (3.55, 'CityMPG+'), 1: (3.67, 'HighwayMPG+'), 2: (457.19, 'Weight-'), 3: (8.5, 'Class-')}
+
+all ~= best? {0: (True, 'CityMPG+'), 1: (True, 'HighwayMPG+'), 2: (True, 'Weight-'), 3: (True, 'Class-')}
+best ~= rest? {0: (True, 'CityMPG+'), 1: (True, 'HighwayMPG+'), 2: (True, 'Weight-'), 3: (True, 'Class-')}
+✅ pass: sway
+
+▶️  xpln ------------------------------------------------------------
+
+
+maker Acura Acura
+maker Audi Audi
+maker Buick Buick
+maker Cadillac Cadillac
+maker Dodge Dodge
+maker Eagle Eagle
+maker Ford Ford
+maker Honda Honda
+maker Lexus Lexus
+maker Lincoln Lincoln
+maker Mazda Mazda
+maker Mercedes-Benz Mercedes-Benz
+maker Oldsmobile Oldsmobile
+maker Subaru Subaru
+maker Suzuki Suzuki
+maker Toyota Toyota
+maker Volkswagen Volkswagen
+maker Volvo Volvo
+
+
+type Compact Compact
+type Large Large
+type Midsize Midsize
+type Small Small
+type Sporty Sporty
+type Van Van
+
+
+Air_Bags_standard -9223372036854775807 1
+Air_Bags_standard 1 9223372036854775807
+
+
+Drive_train_type -9223372036854775807 1
+Drive_train_type 1 9223372036854775807
+
+
+Number_of_cylinders -9223372036854775807 4
+Number_of_cylinders 4 6
+Number_of_cylinders 6 9223372036854775807
+
+
+Engine_size -9223372036854775807 1.3
+Engine_size 1.3 2.3
+Engine_size 2.3 2.5
+Engine_size 2.5 2.8
+Engine_size 2.8 3.2
+Engine_size 3.2 3.5
+Engine_size 3.5 3.8
+Engine_size 3.8 4.9
+Engine_size 4.9 9223372036854775807
+
+
+Horsepower -9223372036854775807 73
+Horsepower 73 82
+Horsepower 82 100
+Horsepower 100 114
+Horsepower 114 138
+Horsepower 138 140
+Horsepower 140 170
+Horsepower 170 185
+Horsepower 185 200
+Horsepower 200 9223372036854775807
+
+
+RPM -9223372036854775807 4000
+RPM 4000 4100
+RPM 4100 4400
+RPM 4400 4800
+RPM 4800 5100
+RPM 5100 5200
+RPM 5200 5400
+RPM 5400 5600
+RPM 5600 5800
+RPM 5800 9223372036854775807
+
+
+Engine_revolutions_per_mile -9223372036854775807 1320
+Engine_revolutions_per_mile 1320 1510
+Engine_revolutions_per_mile 1510 1690
+Engine_revolutions_per_mile 1690 1835
+Engine_revolutions_per_mile 1835 1980
+Engine_revolutions_per_mile 1980 2340
+Engine_revolutions_per_mile 2340 2515
+Engine_revolutions_per_mile 2515 2535
+Engine_revolutions_per_mile 2535 2875
+Engine_revolutions_per_mile 2875 3285
+Engine_revolutions_per_mile 3285 3360
+Engine_revolutions_per_mile 3360 9223372036854775807
+
+
+manual_transmission_available 0 0
+manual_transmission_available 1 1
+
+
+Fuel_tank_capacity -9223372036854775807 9.2
+Fuel_tank_capacity 9.2 10.6
+Fuel_tank_capacity 10.6 11.9
+Fuel_tank_capacity 11.9 13.2
+Fuel_tank_capacity 13.2 16
+Fuel_tank_capacity 16 18
+Fuel_tank_capacity 18 18.8
+Fuel_tank_capacity 18.8 20
+Fuel_tank_capacity 20 21.1
+Fuel_tank_capacity 21.1 9223372036854775807
+
+
+Passenger_capacity -9223372036854775807 5
+Passenger_capacity 5 6
+Passenger_capacity 6 9223372036854775807
+
+
+Length -9223372036854775807 146
+Length 146 162
+Length 162 174
+Length 174 179
+Length 179 184
+Length 184 188
+Length 188 194
+Length 194 200
+Length 200 205
+Length 205 206
+Length 206 9223372036854775807
+
+
+Wheelbase -9223372036854775807 90
+Wheelbase 90 93
+Wheelbase 93 94
+Wheelbase 94 97
+Wheelbase 97 99
+Wheelbase 99 103
+Wheelbase 103 105
+Wheelbase 105 106
+Wheelbase 106 109
+Wheelbase 109 111
+Wheelbase 111 113
+Wheelbase 113 115
+Wheelbase 115 9223372036854775807
+
+
+Width -9223372036854775807 60
+Width 60 63
+Width 63 65
+Width 65 66
+Width 66 67
+Width 67 70
+Width 70 71
+Width 71 73
+Width 73 74
+Width 74 9223372036854775807
+
+
+U-turn_space -9223372036854775807 32
+U-turn_space 32 34
+U-turn_space 34 36
+U-turn_space 36 37
+U-turn_space 37 38
+U-turn_space 38 39
+U-turn_space 39 40
+U-turn_space 40 41
+U-turn_space 41 42
+U-turn_space 42 43
+U-turn_space 43 44
+U-turn_space 44 9223372036854775807
+
+
+Rear_seat_room -9223372036854775807 23
+Rear_seat_room 23 24
+Rear_seat_room 24 26.5
+Rear_seat_room 26.5 27.5
+Rear_seat_room 27.5 28.5
+Rear_seat_room 28.5 30
+Rear_seat_room 30 31
+Rear_seat_room 31 9223372036854775807
+
+
+Luggage_capacity -9223372036854775807 8
+Luggage_capacity 8 10
+Luggage_capacity 10 11
+Luggage_capacity 11 12
+Luggage_capacity 12 13
+Luggage_capacity 13 14
+Luggage_capacity 14 15
+Luggage_capacity 15 17
+Luggage_capacity 17 18
+Luggage_capacity 18 19
+Luggage_capacity 19 9223372036854775807
+
+
+domestic 0 0
+domestic 1 1
+
+domestic 0 0 0.686 {'best': 6, 'rest': 11}
+maker Toyota Toyota 0.667 {'best': 4}
+manual_transmission_available 1 1 0.632 {'best': 6, 'rest': 14}
+Horsepower 114 138 0.627 {'best': 4, 'rest': 1}
+Drive_train_type 1 9223372036854775807 0.296 {'best': 2, 'rest': 1}
+RPM 5200 5400 0.296 {'best': 2, 'rest': 1}
+Length 146 162 0.296 {'best': 2, 'rest': 1}
+Length 184 188 0.296 {'best': 2, 'rest': 1}
+Rear_seat_room 26.5 27.5 0.267 {'best': 2, 'rest': 2}
+type Small Small 0.242 {'best': 2, 'rest': 3}
+Engine_revolutions_per_mile 1980 2340 0.242 {'best': 2, 'rest': 3}
+Engine_revolutions_per_mile 2340 2515 0.205 {'best': 2, 'rest': 5}
+Passenger_capacity -9223372036854775807 5 0.205 {'best': 2, 'rest': 3, 3: 1, 10: 1}
+maker Suzuki Suzuki 0.167 {'best': 1}
+Horsepower 73 82 0.167 {'best': 1}
+Engine_revolutions_per_mile 3285 3360 0.167 {'best': 1}
+Engine_revolutions_per_mile 3360 9223372036854775807 0.167 {'best': 1}
+Fuel_tank_capacity 9.2 10.6 0.167 {'best': 1}
+Fuel_tank_capacity 10.6 11.9 0.167 {'best': 1}
+Wheelbase 90 93 0.167 {'best': 1}
+Wheelbase 93 94 0.167 {'best': 1}
+Width 60 63 0.167 {'best': 1}
+Width 63 65 0.167 {'best': 1}
+Rear_seat_room -9223372036854775807 23 0.167 {'best': 1}
+Rear_seat_room 27.5 28.5 0.167 {'best': 1}
+Luggage_capacity 12 13 0.167 {'best': 1}
+maker Subaru Subaru 0.133 {'best': 1, 'rest': 1}
+Engine_size -9223372036854775807 1.3 0.133 {'best': 1, 'rest': 1}
+Horsepower -9223372036854775807 73 0.133 {'best': 1, 'rest': 1}
+RPM 4800 5100 0.133 {'best': 1, 'rest': 1}
+RPM 5100 5200 0.133 {'best': 1, 'rest': 1}
+U-turn_space 32 34 0.133 {'best': 1, 'rest': 1}
+U-turn_space 37 38 0.133 {'best': 1, 'rest': 1}
+U-turn_space 40 41 0.133 {'best': 1, 'rest': 1}
+Rear_seat_room 31 9223372036854775807 0.133 {'best': 1, 'rest': 1}
+Luggage_capacity 8 10 0.133 {'best': 1, 'rest': 1}
+type Sporty Sporty 0.111 {'best': 1, 'rest': 2}
+type Van Van 0.111 {'best': 1, 'rest': 2}
+RPM 5800 9223372036854775807 0.111 {'best': 1, 'rest': 2}
+Fuel_tank_capacity 18.8 20 0.111 {'best': 1, 'rest': 2}
+Passenger_capacity 6 9223372036854775807 0.111 {'best': 1, 'rest': 2}
+Length 162 174 0.111 {'best': 1, 'rest': 2}
+Length 174 179 0.111 {'best': 1, 'rest': 2}
+Wheelbase 97 99 0.111 {'best': 1, 'rest': 2}
+Wheelbase 111 113 0.111 {'best': 1, 'rest': 2}
+Width 66 67 0.111 {'best': 1, 'rest': 2}
+Width 70 71 0.111 {'best': 1, 'rest': 2}
+U-turn_space 34 36 0.111 {'best': 1, 'rest': 2}
+U-turn_space 38 39 0.111 {'best': 1, 'rest': 2}
+Rear_seat_room 23 24 0.111 {'best': 1, 'rest': 2}
+Luggage_capacity 10 11 0.111 {'best': 1, 'rest': 2}
+Number_of_cylinders -9223372036854775807 4 0.095 {'best': 1, 'rest': 1, 5: 1, 8: 1}
+Engine_size 2.3 2.5 0.095 {'best': 1, 'rest': 3}
+U-turn_space 36 37 0.095 {'best': 1, 'rest': 3}
+Engine_size 1.3 2.3 0.083 {'best': 1, 'rest': 2, 3: 2}
+Fuel_tank_capacity 18 18.8 0.083 {'best': 1, 'rest': 4}
+Luggage_capacity 14 15 0.083 {'best': 1, 'rest': 4}
+type Compact Compact 0.074 {'best': 1, 'rest': 5}
+RPM 5400 5600 0.067 {'best': 1, 'rest': 6}
+Luggage_capacity 13 14 0.067 {'best': 1, 'rest': 6}
+type Midsize Midsize 0.061 {'best': 1, 'rest': 7}
+Air_Bags_standard -9223372036854775807 1 0.056 {'best': 1, 'rest': 6, 5: 1, 11: 1}
+maker Acura Acura 0.0 {'rest': 1}
+maker Audi Audi 0.0 {'rest': 2}
+maker Buick Buick 0.0 {'rest': 3}
+maker Cadillac Cadillac 0.0 {'rest': 1}
+maker Dodge Dodge 0.0 {'rest': 2}
+maker Eagle Eagle 0.0 {'rest': 3}
+maker Ford Ford 0.0 {'rest': 1}
+maker Honda Honda 0.0 {'rest': 1}
+maker Lexus Lexus 0.0 {'rest': 1}
+maker Lincoln Lincoln 0.0 {'rest': 1}
+maker Mazda Mazda 0.0 {'rest': 2}
+maker Mercedes-Benz Mercedes-Benz 0.0 {'rest': 1}
+maker Oldsmobile Oldsmobile 0.0 {'rest': 2}
+maker Volkswagen Volkswagen 0.0 {'rest': 1}
+maker Volvo Volvo 0.0 {'rest': 1}
+type Large Large 0.0 {'rest': 5}
+Air_Bags_standard 1 9223372036854775807 0.0 {'rest': 7}
+Drive_train_type -9223372036854775807 1 0.0 {'rest': 3, 4: 1, 20: 1}
+Number_of_cylinders 4 6 0.0 {'rest': 14}
+Number_of_cylinders 6 9223372036854775807 0.0 {'rest': 1}
+Engine_size 2.5 2.8 0.0 {'rest': 3}
+Engine_size 2.8 3.2 0.0 {'rest': 3}
+Engine_size 3.2 3.5 0.0 {'rest': 2}
+Engine_size 3.5 3.8 0.0 {'rest': 5}
+Engine_size 3.8 4.9 0.0 {'rest': 1}
+Engine_size 4.9 9223372036854775807 0.0 {'rest': 1}
+Horsepower 82 100 0.0 {'rest': 3}
+Horsepower 100 114 0.0 {'rest': 1}
+Horsepower 138 140 0.0 {'rest': 1}
+Horsepower 140 170 0.0 {'rest': 8}
+Horsepower 170 185 0.0 {'rest': 5}
+Horsepower 185 200 0.0 {'rest': 2}
+Horsepower 200 9223372036854775807 0.0 {'rest': 2}
+RPM -9223372036854775807 4000 0.0 {'rest': 1}
+RPM 4000 4100 0.0 {'rest': 1}
+RPM 4100 4400 0.0 {'rest': 1}
+RPM 4400 4800 0.0 {'rest': 6}
+RPM 5600 5800 0.0 {'rest': 4}
+Engine_revolutions_per_mile -9223372036854775807 1320 0.0 {'rest': 1}
+Engine_revolutions_per_mile 1320 1510 0.0 {'rest': 1}
+Engine_revolutions_per_mile 1510 1690 0.0 {'rest': 4}
+Engine_revolutions_per_mile 1690 1835 0.0 {'rest': 1}
+Engine_revolutions_per_mile 1835 1980 0.0 {'rest': 3}
+Engine_revolutions_per_mile 2515 2535 0.0 {'rest': 3}
+Engine_revolutions_per_mile 2535 2875 0.0 {'rest': 2}
+Engine_revolutions_per_mile 2875 3285 0.0 {'rest': 1}
+manual_transmission_available 0 0 0.0 {'rest': 10}
+Fuel_tank_capacity -9223372036854775807 9.2 0.0 {'rest': 1}
+Fuel_tank_capacity 11.9 13.2 0.0 {'rest': 2}
+Fuel_tank_capacity 13.2 16 0.0 {'rest': 1, 2: 1, 6: 1}
+Fuel_tank_capacity 16 18 0.0 {'rest': 5}
+Fuel_tank_capacity 20 21.1 0.0 {'rest': 2}
+Fuel_tank_capacity 21.1 9223372036854775807 0.0 {'rest': 1}
+Passenger_capacity 5 6 0.0 {'rest': 9}
+Length -9223372036854775807 146 0.0 {'rest': 1}
+Length 179 184 0.0 {'rest': 3}
+Length 188 194 0.0 {'rest': 6}
+Length 194 200 0.0 {'rest': 3}
+Length 200 205 0.0 {'rest': 3}
+Length 205 206 0.0 {'rest': 1}
+Length 206 9223372036854775807 0.0 {'rest': 1}
+Wheelbase -9223372036854775807 90 0.0 {'rest': 1}
+Wheelbase 94 97 0.0 {'rest': 1}
+Wheelbase 99 103 0.0 {'rest': 1, 2: 1, 3: 1}
+Wheelbase 103 105 0.0 {'rest': 3}
+Wheelbase 105 106 0.0 {'rest': 3}
+Wheelbase 106 109 0.0 {'rest': 2}
+Wheelbase 109 111 0.0 {'rest': 3}
+Wheelbase 113 115 0.0 {'rest': 2}
+Wheelbase 115 9223372036854775807 0.0 {'rest': 1}
+Width -9223372036854775807 60 0.0 {'rest': 1}
+Width 65 66 0.0 {'rest': 3}
+Width 67 70 0.0 {'rest': 1, 2: 1, 6: 1}
+Width 71 73 0.0 {'rest': 3}
+Width 73 74 0.0 {'rest': 5}
+Width 74 9223372036854775807 0.0 {'rest': 1}
+U-turn_space -9223372036854775807 32 0.0 {'rest': 2}
+U-turn_space 39 40 0.0 {'rest': 6}
+U-turn_space 41 42 0.0 {'rest': 2}
+U-turn_space 42 43 0.0 {'rest': 1}
+U-turn_space 43 44 0.0 {'rest': 2}
+U-turn_space 44 9223372036854775807 0.0 {'rest': 1}
+Rear_seat_room 24 26.5 0.0 {'rest': 5}
+Rear_seat_room 28.5 30 0.0 {'rest': 7}
+Rear_seat_room 30 31 0.0 {'rest': 7}
+Luggage_capacity -9223372036854775807 8 0.0 {'rest': 1}
+Luggage_capacity 11 12 0.0 {'rest': 1}
+Luggage_capacity 15 17 0.0 {'rest': 3}
+Luggage_capacity 17 18 0.0 {'rest': 2}
+Luggage_capacity 18 19 0.0 {'rest': 1}
+Luggage_capacity 19 9223372036854775807 0.0 {'rest': 1}
+domestic 1 1 0.0 {'rest': 13}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space'), 16: ([], 'Number_of_cylinders')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space'), 16: ([], 'Number_of_cylinders')}
+{0: ([], 'maker')}
+{0: ([], 'maker')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width')}      
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width')}      
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width')}      
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width')}      
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space'), 16: ([], 'Number_of_cylinders')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space'), 16: ([], 'Number_of_cylinders')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space'), 16: ([], 'Number_of_cylinders')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space'), 16: ([], 'Number_of_cylinders')}
+{0: ([], 'maker'), 1: ([], 'manual_transmission_available'), 2: ([], 'Horsepower'), 3: ([], 'Drive_train_type'), 4: ([], 'RPM'), 5: ([], 'Length'), 6: ([], 'Rear_seat_room'), 7: ([], 'type'), 8: ([], 'Engine_revolutions_per_mile'), 9: ([], 'Passenger_capacity'), 10: ([], 'Fuel_tank_capacity'), 11: ([], 'Wheelbase'), 12: ([], 'Width'), 13: ([], 'Luggage_capacity'), 14: ([], 'Engine_size'), 15: ([], 'U-turn_space'), 16: ([], 'Number_of_cylinders')}
+----------- explain = {0: ([], 'maker')}
+all                      {0: (22.37, 'CityMPG+'), 1: (29.09, 'HighwayMPG+'), 2: (3072.9, 'Weight-'), 3: (19.51, 'Class-')} {0: (5.62, 'CityMPG+'), 1: (5.33, 'HighwayMPG+'), 2: (589.9, 'Weight-'), 3: (9.66, 'Class-')}sway with  5  evals {0: (26.5, 'CityMPG+'), 1: (32.17, 'HighwayMPG+'), 2: (2811.67, 'Weight-'), 3: (16.2, 'Class-')} {0: (7.66, 'CityMPG+'), 1: (7.19, 'HighwayMPG+'), 2: (689.68, 'Weight-'), 3: (5.67, 'Class-')}sway with  5  evals {0: (24.25, 'CityMPG+'), 1: (30.0, 'HighwayMPG+'), 2: (2955.0, 'Weight-'), 3: (17.27, 'Class-')} {0: (5.91, 'CityMPG+'), 1: (6.27, 'HighwayMPG+'), 2: (708.18, 'Weight-'), 3: (5.4, 'Class-')}
+sort with  93  evals {0: (20.2, 'CityMPG+'), 1: (27.6, 'HighwayMPG+'), 2: (3372.0, 'Weight-'), 3: (29.28, 'Class-')} {0: (1.79, 'CityMPG+'), 1: (2.7, 'HighwayMPG+'), 2: (295.94, 'Weight-'), 3: (8.32, 'Class-')}✅ pass: xpln
