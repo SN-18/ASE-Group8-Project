@@ -21,5 +21,5 @@ def cli(options):
                     v = 'false'
                 else:
                     v = args[n + 1]
-            options[k] = coerce(v)
+        options[k] = coerce(v)
     return options

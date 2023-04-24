@@ -1,0 +1,21 @@
+--- TABLE ONE ---
+
+all			 {0: (44.53, 'PSNR-'), 1: (1658.0, 'Energy-')} {0: (6.47, 'PSNR-'), 1: (1610.66, 'Energy-')}
+sway1 with  9  evals {0: (44.28, 'PSNR-'), 1: (2953.94, 'Energy-')} {0: (4.93, 'PSNR-'), 1: (2714.42, 'Energy-')}
+xpln1 with  9  evals {0: (43.93, 'PSNR-'), 1: (1075.38, 'Energy-')} {0: (5.74, 'PSNR-'), 1: (605.09, 'Energy-')}
+sway2 with  9  evals {0: (44.42, 'PSNR-'), 1: (1381.86, 'Energy-')} {0: (5.14, 'PSNR-'), 1: (1186.55, 'Energy-')}
+xpln2 with  9  evals {0: (45.25, 'PSNR-'), 1: (1083.84, 'Energy-')} {0: (5.9, 'PSNR-'), 1: (632.84, 'Energy-')}
+top {0: (45.31, 'PSNR-'), 1: (6834.8, 'Energy-')} {0: (4.33, 'PSNR-'), 1: (2485.24, 'Energy-')}
+
+
+
+--- TABLE TWO ---
+
+				 ['PSNR-', 'Energy-']
+all to all		 ['=', '=']
+all to sway1	 ['=', '!=']
+all to sway2	 ['=', '!=']
+sway1 to sway2	 ['=', '!=']
+sway1 to xpln1	 ['=', '!=']
+sway2 to xpln2	 ['!=', '!=']
+sway1 to top	 ['!=', '!=']

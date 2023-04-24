@@ -22,6 +22,6 @@ OPTIONS:
   -s  --seed   random number seed          = 937162211
 ACTIONS:
 '''
-seed = 937162211
+# seed = 937162211
 b4 = {}
 magic = "\n[%s]+[-][%S][%s]+[-][-]([%S]+)[^\n]+= ([%S]+)"

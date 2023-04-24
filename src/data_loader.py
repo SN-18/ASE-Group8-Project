@@ -241,9 +241,13 @@ class DATA:
             node['right'] = self.cluster(right, min, cols, node['B'])
         return node
     
+    def sway1(self):
+        return self.sway(self.furthest)
 
+    def sway2(self):
+        return self.sway(self.rand_point)
 
-    def sway(self):
+    def sway(self, selectPointFunction):
         def worker(rows, worse, evals0=None, above=None):
             if len(rows) <= len(self.rows)**the['min']:
                 many_var=many(worse, the['rest']*len(rows))
@@ -263,15 +267,15 @@ class DATA:
         best, rest, evals = worker(self.rows, {}, 0)
         return self.clone(best), self.clone(rest), evals
 
-    # def furthest(self, row1, rows=None, cols=None):
-    #     t = self.around(row1, rows, cols)
-    #     far = math.floor(len(t)*the['Far'])
-    #     last_key = list(t)[far]
-    #     return t[last_key]
+    def furthest(self, row1, rows=None, cols=None):
+        t = self.around(row1, rows, cols)
+        far = math.floor(len(t)*the['Far'])
+        last_key = list(t)[far]
+        return t[last_key]
 
     def rand_point(self, row1, rows=None, cols=None):
         t=self.around(row1, rows, cols)
-        rand_pnt=rand_intpy(1, len(t))
+        rand_pnt=rand_intpy(0, len(t) - 1)
         # self.visited[len(self.visited)] = self.row1
         # while(t[rand_point]['row']==self.row1):
         # rand_point=rand_intpy(1, len(t))

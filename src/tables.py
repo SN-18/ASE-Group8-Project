@@ -134,8 +134,7 @@ class NUM(OBJ):
             self.lo = min(n_current, self.lo)
             self.hi = max(n_current, self.hi)
             pos = None
-            seed = the['seed']
-            seed, temp = functions.rand_fltpy(None, None, seed)
+            the['seed'], temp = functions.rand_fltpy(None, None, the['seed'])
             if len(self.has) <= the['Max']:
                 self.has[len(self.has)] = n_current
             elif temp < the['Max']/self.n:

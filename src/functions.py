@@ -13,7 +13,7 @@ b4 = {}
 
 #miscelleneous functions
 def rand_intpy(lo, hi):
-    globals.seed, val = rand_fltpy(lo, hi, globals.seed)
+    the['seed'], val = rand_fltpy(lo, hi, the['seed'])
     return math.floor(0.5 + val)
 
 def rint(lo, hi, seed):
@@ -525,10 +525,10 @@ def bins(cols,rowss):
 
 
 def cliffsDelta(ns1,ns2):
-    if len(ns1)>256:
-        ns1=many(ns1,256)
-    if len(ns2)>256:
-        ns2=many(ns2,256)
+    if len(ns1)>128:
+        ns1=many(ns1,128)
+    if len(ns2)>128:
+        ns2=many(ns2,128)
     
     
     if len(ns1)>10*len(ns2):
@@ -545,7 +545,8 @@ def cliffsDelta(ns1,ns2):
                 gt=gt+1
             if x<y:
                 lt=lt+1
-    return abs(lt-gt)/n >the['cliffs']
+    temp = (abs(lt-gt)/n) <= the['cliffs']
+    return temp
 
 def diffs(nums1,nums2):
     def fun(k,nums):
