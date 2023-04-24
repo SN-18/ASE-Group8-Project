@@ -1,9 +1,9 @@
 --- TABLE ONE ---
 
 all			 {0: (369.99, 'Cost-'), 1: (0.87, 'Completion+'), 2: (0.24, 'Idle-')} {0: (204.4, 'Cost-'), 1: (0.13, 'Completion+'), 2: (0.2, 'Idle-')}
-sway1 with  8  evals {0: (374.37, 'Cost-'), 1: (0.86, 'Completion+'), 2: (0.24, 'Idle-')} {0: (202.36, 'Cost-'), 1: (0.15, 'Completion+'), 2: (0.2, 'Idle-')}
+sway1 with  8  evals {0: (365.84, 'Cost-'), 1: (0.86, 'Completion+'), 2: (0.24, 'Idle-')} {0: (203.54, 'Cost-'), 1: (0.14, 'Completion+'), 2: (0.19, 'Idle-')}
 xpln1 with  8  evals {0: (369.99, 'Cost-'), 1: (0.87, 'Completion+'), 2: (0.24, 'Idle-')} {0: (204.4, 'Cost-'), 1: (0.13, 'Completion+'), 2: (0.2, 'Idle-')}
-sway2 with  8  evals {0: (374.02, 'Cost-'), 1: (0.87, 'Completion+'), 2: (0.24, 'Idle-')} {0: (202.47, 'Cost-'), 1: (0.13, 'Completion+'), 2: (0.2, 'Idle-')}
+sway2 with  8  evals {0: (366.25, 'Cost-'), 1: (0.86, 'Completion+'), 2: (0.23, 'Idle-')} {0: (198.05, 'Cost-'), 1: (0.14, 'Completion+'), 2: (0.19, 'Idle-')}
 xpln2 with  8  evals {0: (369.99, 'Cost-'), 1: (0.87, 'Completion+'), 2: (0.24, 'Idle-')} {0: (204.39, 'Cost-'), 1: (0.13, 'Completion+'), 2: (0.2, 'Idle-')}
 top {0: (369.97, 'Cost-'), 1: (0.86, 'Completion+'), 2: (0.23, 'Idle-')} {0: (190.04, 'Cost-'), 1: (0.15, 'Completion+'), 2: (0.2, 'Idle-')}
 
@@ -14,7 +14,7 @@ top {0: (369.97, 'Cost-'), 1: (0.86, 'Completion+'), 2: (0.23, 'Idle-')} {0: (19
 				 ['Cost-', 'Completion+', 'Idle-']
 all to all		 ['=', '=', '=']
 all to sway1	 ['=', '=', '=']
-all to sway2	 ['=', '=', '=']
+all to sway2	 ['!=', '=', '=']
 sway1 to sway2	 ['=', '=', '=']
 sway1 to xpln1	 ['=', '=', '=']
 sway2 to xpln2	 ['=', '=', '=']

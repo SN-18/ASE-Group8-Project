@@ -1,10 +1,10 @@
 --- TABLE ONE ---
 
 all			 {0: (94.02, 'Kloc+'), 1: (624.41, 'Effort-'), 2: (3761.76, 'Defects-'), 3: (24.18, 'Months-')} {0: (133.6, 'Kloc+'), 1: (1135.93, 'Effort-'), 2: (6145.06, 'Defects-'), 3: (12.97, 'Months-')}
-sway1 with  5  evals {0: (100.38, 'Kloc+'), 1: (458.54, 'Effort-'), 2: (4080.35, 'Defects-'), 3: (22.93, 'Months-')} {0: (200.04, 'Kloc+'), 1: (966.84, 'Effort-'), 2: (9898.61, 'Defects-'), 3: (17.71, 'Months-')}
-xpln1 with  5  evals {0: (157.07, 'Kloc+'), 1: (684.35, 'Effort-'), 2: (5911.17, 'Defects-'), 3: (29.29, 'Months-')} {0: (215.11, 'Kloc+'), 1: (1066.64, 'Effort-'), 2: (10666.41, 'Defects-'), 3: (17.68, 'Months-')}
-sway2 with  5  evals {0: (110.82, 'Kloc+'), 1: (756.96, 'Effort-'), 2: (4584.43, 'Defects-'), 3: (26.04, 'Months-')} {0: (189.24, 'Kloc+'), 1: (1171.35, 'Effort-'), 2: (9431.65, 'Defects-'), 3: (17.11, 'Months-')}
-xpln2 with  5  evals {0: (111.73, 'Kloc+'), 1: (737.03, 'Effort-'), 2: (4598.61, 'Defects-'), 3: (25.77, 'Months-')} {0: (180.1, 'Kloc+'), 1: (1358.33, 'Effort-'), 2: (8961.95, 'Defects-'), 3: (16.47, 'Months-')}
+sway1 with  5  evals {0: (57.48, 'Kloc+'), 1: (405.04, 'Effort-'), 2: (2354.44, 'Defects-'), 3: (19.22, 'Months-')} {0: (107.37, 'Kloc+'), 1: (1012.0, 'Effort-'), 2: (5160.47, 'Defects-'), 3: (11.24, 'Months-')}
+xpln1 with  5  evals {0: (26.7, 'Kloc+'), 1: (140.4, 'Effort-'), 2: (1124.6, 'Defects-'), 3: (16.48, 'Months-')} {0: (35.59, 'Kloc+'), 1: (172.26, 'Effort-'), 2: (1261.52, 'Defects-'), 3: (5.98, 'Months-')}
+sway2 with  5  evals {0: (47.66, 'Kloc+'), 1: (323.32, 'Effort-'), 2: (1999.97, 'Defects-'), 3: (18.64, 'Months-')} {0: (61.86, 'Kloc+'), 1: (851.03, 'Effort-'), 2: (2682.13, 'Defects-'), 3: (8.39, 'Months-')}
+xpln2 with  5  evals {0: (50.21, 'Kloc+'), 1: (329.91, 'Effort-'), 2: (1892.44, 'Defects-'), 3: (17.86, 'Months-')} {0: (72.24, 'Kloc+'), 1: (718.18, 'Effort-'), 2: (2700.99, 'Defects-'), 3: (9.24, 'Months-')}
 top {0: (10.48, 'Kloc+'), 1: (43.68, 'Effort-'), 2: (326.8, 'Defects-'), 3: (10.62, 'Months-')} {0: (8.39, 'Kloc+'), 1: (42.62, 'Effort-'), 2: (261.44, 'Defects-'), 3: (2.99, 'Months-')}
 
 
@@ -13,9 +13,9 @@ top {0: (10.48, 'Kloc+'), 1: (43.68, 'Effort-'), 2: (326.8, 'Defects-'), 3: (10.
 
 				 ['Kloc+', 'Effort-', 'Defects-', 'Months-']
 all to all		 ['=', '=', '=', '=']
-all to sway1	 ['=', '!=', '=', '=']
-all to sway2	 ['=', '=', '=', '=']
-sway1 to sway2	 ['!=', '!=', '!=', '!=']
+all to sway1	 ['!=', '!=', '!=', '!=']
+all to sway2	 ['!=', '!=', '!=', '!=']
+sway1 to sway2	 ['=', '=', '=', '=']
 sway1 to xpln1	 ['!=', '!=', '!=', '!=']
-sway2 to xpln2	 ['=', '=', '=', '=']
+sway2 to xpln2	 ['!=', '!=', '!=', '!=']
 sway1 to top	 ['!=', '!=', '!=', '!=']

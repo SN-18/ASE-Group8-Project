@@ -1,10 +1,10 @@
 --- TABLE ONE ---
 
 all			 {0: (30.94, 'NUMBERITERATIONS-'), 1: (506.07, 'TIMETOSOLUTION-')} {0: (94.53, 'NUMBERITERATIONS-'), 1: (1677.05, 'TIMETOSOLUTION-')}
-sway1 with  10  evals {0: (18.99, 'NUMBERITERATIONS-'), 1: (281.36, 'TIMETOSOLUTION-')} {0: (57.42, 'NUMBERITERATIONS-'), 1: (1013.08, 'TIMETOSOLUTION-')}
+sway1 with  10  evals {0: (42.19, 'NUMBERITERATIONS-'), 1: (621.3, 'TIMETOSOLUTION-')} {0: (110.31, 'NUMBERITERATIONS-'), 1: (1716.57, 'TIMETOSOLUTION-')}
 xpln1 with  10  evals {0: (30.94, 'NUMBERITERATIONS-'), 1: (506.07, 'TIMETOSOLUTION-')} {0: (94.53, 'NUMBERITERATIONS-'), 1: (1677.05, 'TIMETOSOLUTION-')}
-sway2 with  10  evals {0: (24.82, 'NUMBERITERATIONS-'), 1: (325.51, 'TIMETOSOLUTION-')} {0: (75.9, 'NUMBERITERATIONS-'), 1: (949.35, 'TIMETOSOLUTION-')}
-xpln2 with  10  evals {0: (31.45, 'NUMBERITERATIONS-'), 1: (500.21, 'TIMETOSOLUTION-')} {0: (94.88, 'NUMBERITERATIONS-'), 1: (1647.53, 'TIMETOSOLUTION-')}
+sway2 with  10  evals {0: (39.32, 'NUMBERITERATIONS-'), 1: (648.64, 'TIMETOSOLUTION-')} {0: (105.56, 'NUMBERITERATIONS-'), 1: (1895.61, 'TIMETOSOLUTION-')}
+xpln2 with  10  evals {0: (31.09, 'NUMBERITERATIONS-'), 1: (504.3, 'TIMETOSOLUTION-')} {0: (94.63, 'NUMBERITERATIONS-'), 1: (1668.2, 'TIMETOSOLUTION-')}
 top {0: (159.14, 'NUMBERITERATIONS-'), 1: (1793.6, 'TIMETOSOLUTION-')} {0: (205.45, 'NUMBERITERATIONS-'), 1: (2480.2, 'TIMETOSOLUTION-')}
 
 
@@ -13,9 +13,9 @@ top {0: (159.14, 'NUMBERITERATIONS-'), 1: (1793.6, 'TIMETOSOLUTION-')} {0: (205.
 
 				 ['NUMBERITERATIONS-', 'TIMETOSOLUTION-']
 all to all		 ['=', '=']
-all to sway1	 ['=', '!=']
-all to sway2	 ['=', '!=']
+all to sway1	 ['=', '=']
+all to sway2	 ['=', '=']
 sway1 to sway2	 ['=', '=']
-sway1 to xpln1	 ['!=', '!=']
-sway2 to xpln2	 ['=', '!=']
+sway1 to xpln1	 ['=', '=']
+sway2 to xpln2	 ['!=', '!=']
 sway1 to top	 ['!=', '!=']

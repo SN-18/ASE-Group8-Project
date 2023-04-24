@@ -1,10 +1,10 @@
 --- TABLE ONE ---
 
 all			 {0: (4277.64, 'N_effort-')} {0: (7071.25, 'N_effort-')}
-sway1 with  6  evals {0: (3712.08, 'N_effort-')} {0: (5373.73, 'N_effort-')}
-xpln1 with  6  evals {0: (4228.14, 'N_effort-')} {0: (7344.43, 'N_effort-')}
-sway2 with  6  evals {0: (3522.55, 'N_effort-')} {0: (3726.6, 'N_effort-')}
-xpln2 with  6  evals {0: (3799.7, 'N_effort-')} {0: (6224.43, 'N_effort-')}
+sway1 with  6  evals {0: (4904.81, 'N_effort-')} {0: (8094.47, 'N_effort-')}
+xpln1 with  6  evals {0: (4221.87, 'N_effort-')} {0: (7217.05, 'N_effort-')}
+sway2 with  6  evals {0: (3661.26, 'N_effort-')} {0: (5508.41, 'N_effort-')}
+xpln2 with  6  evals {0: (3761.09, 'N_effort-')} {0: (6196.95, 'N_effort-')}
 top {0: (3002.57, 'N_effort-')} {0: (2408.84, 'N_effort-')}
 
 
@@ -13,9 +13,9 @@ top {0: (3002.57, 'N_effort-')} {0: (2408.84, 'N_effort-')}
 
 				 ['N_effort-']
 all to all		 ['=']
-all to sway1	 ['!=']
-all to sway2	 ['!=']
-sway1 to sway2	 ['=']
-sway1 to xpln1	 ['!=']
-sway2 to xpln2	 ['!=']
-sway1 to top	 ['=']
+all to sway1	 ['=']
+all to sway2	 ['=']
+sway1 to sway2	 ['!=']
+sway1 to xpln1	 ['=']
+sway2 to xpln2	 ['=']
+sway1 to top	 ['!=']

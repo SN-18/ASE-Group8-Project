@@ -31,7 +31,7 @@ for currFile in files:
     sway1evals = 0
     sway2evals = 0
 
-    for i in range(5):
+    for i in range(20):
         print('--> Running SWAY and XPLN iteration: ', i, 'for file: ', currFile)
         the['seed'] = random.randint(-sys.maxsize - 1, sys.maxsize)
 
